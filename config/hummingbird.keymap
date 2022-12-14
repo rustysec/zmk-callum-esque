@@ -218,7 +218,7 @@
             media {
 		bindings = <
             &none       &none       &none       &none       &none       /**/ /**/  	    &none       &none       &none       &none       &none  
-            &sk LGUI    &sk LALT    &sk LCTRL   &sk LSHFT   &none       /**/ /**/       &sk C_PP    VOL_D       VOL_U       &sk C_PREV  &none
+            &sk LGUI    &sk LALT    &sk LCTRL   &sk LSHFT   &none       /**/ /**/       &kp C_PP    VOL_D       VOL_U       &kp C_PREV  &none
                         &none       &none       &none                   /**/ /**/                   BT0         BT1         BT2         /*BT3*/
                                                 &none       &none                       &none       &none
 		>;
