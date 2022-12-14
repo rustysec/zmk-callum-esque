@@ -77,10 +77,10 @@
             };
             
             // layer combos
-            combo_nav {
+            combo_media {
                 timeout-ms = <50>;
                 key-positions = <22 27>;
-                bindings = <&mo _NAV>;
+                bindings = <&mo _MEDIA>;
                 layers = <0>;
             };
             combo_sym {
@@ -202,7 +202,7 @@
             &kp Q       &kp W       &kp F       &kp P       &kp G       /**/ /**/       &kp J       &kp L       &kp U       &kp Y       &kp SQT
             &kp A       &kp R       &kp S       &kp T       &kp D 	    /**/ /**/	    &kp H       &kp N       &kp E       &kp I       &kp O
             /*z*/       &kp X       &kp C       &kp V       /*b*/       /**/ /**/       /*k*/       &kp M       &kp COMMA   &kp DOT     /*SLASH*/
-                                                &mo _MEDIA  &kp BSPC                    &kp SPC     &mo _NUM
+                                                &mo _NAV  &kp BSPC                    &kp SPC     &mo _NUM
 		>;
 		};
 
