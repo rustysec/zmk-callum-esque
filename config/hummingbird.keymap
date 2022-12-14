@@ -108,7 +108,7 @@
                 timeout-ms = <20>;
                 key-positions = <10 11>;
                 bindings = <&kp Z>;
-                layers = <0>;
+                layers = <0 3 4>;
             };
             
             // Slash position combos
@@ -116,7 +116,7 @@
                 timeout-ms = <20>;
                 key-positions = <18 19>;
                 bindings = <&kp SLASH>;
-                layers = <0>;
+                layers = <0 1>;
             };
             combo_bt3 {
                 timeout-ms = <20>;
