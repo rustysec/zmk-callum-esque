@@ -210,7 +210,7 @@
             &kp Q       &kp W       &kp F       &kp P       &kp G       /**/ /**/       &kp J       &kp L       &kp U       &kp Y       &kp SQT
             &kp A       &kp R       &kp S       &kp T       &kp D 	    /**/ /**/	    &kp H       &kp N       &kp E       &kp I       &kp O
             /*z*/       &kp X       &kp C       &kp V       /*b*/       /**/ /**/       /*k*/       &kp M       &kp COMMA   &kp DOT     /*SLASH*/
-                                                &mo _MED    &kp BSPC                    &kp SPC     &mo _NUM
+                                                &mo _MEDIA  &kp BSPC                    &kp SPC     &mo _NUM
 		>;
 		};
 
