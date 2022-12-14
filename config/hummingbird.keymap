@@ -71,7 +71,7 @@
             
             combo_caps_word {
                 timeout-ms = <50>;
-                key-positions = <21 22>;
+                key-positions = <2 3>;
                 bindings = <&caps_word>;
                 layers = <0>;
             };
@@ -104,10 +104,9 @@
                 layers = <0 1 2 3 4 5>;
                 slow-release;
             };
-            
             combo_k_new {
                 timeout-ms = <50>;
-                key-positions = <5 15>;
+                key-positions = <23 24>;
                 bindings = <&kp K>;
                 layers = <0>;
                 slow-release;
@@ -119,7 +118,6 @@
                 bindings = <&kp Z>;
                 layers = <0 3 4>;
             };
-
             combo_z_new {
                 timeout-ms = <50>;
                 key-positions = <0 10>;
@@ -130,19 +128,13 @@
             // Slash position combos
             combo_slash {
                 timeout-ms = <50>;
-                key-positions = <18 19>;
-                bindings = <&kp SLASH>;
-                layers = <0 1>;
-            };
-            combo_slash_new {
-                timeout-ms = <50>;
                 key-positions = <9 19>;
                 bindings = <&kp SLASH>;
                 layers = <0 1>;
             };
             combo_bt3 {
                 timeout-ms = <50>;
-                key-positions = <18 19>;
+                key-positions = <9 19>;
                 bindings = <&bt BT_SEL 3>;
                 layers = <2>;
             };
@@ -171,20 +163,20 @@
             
             combo_new_b {
                 timeout-ms = <50>;
-                key-positions = <4 14>;
+                key-positions = <21 22>;
                 bindings = <&kp B>;
                 layers = <0>;
                 slow-release;
             };
             combo_new_b_bslh {
                 timeout-ms = <50>;
-                key-positions = <4 14>;
+                key-positions = <21 22>;
                 bindings = <&kp BSLH>;
                 layers = <3>;
             };
             combo_new_b_pipe {
                 timeout-ms = <50>;
-                key-positions = <4 14>;
+                key-positions = <21 22>;
                 bindings = <&kp PIPE>;
                 layers = <4>;
             };
