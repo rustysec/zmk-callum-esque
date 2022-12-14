@@ -81,19 +81,19 @@
                 timeout-ms = <50>;
                 key-positions = <2 3>;
                 bindings = <&kp RSHIFT>;
-                layels = <0>;
+                layers = <0>;
             };
             combo_lalt {
                 timeout-ms = <50>;
                 key-positions = <1 2>;
                 bindings = <&kp RALT>;
-                layels = <0>;
+                layers = <0>;
             };
             combo_lctrl {
                 timeout-ms = <50>;
                 key-positions = <0 1>;
                 bindings = <&kp RCTRL>;
-                layels = <0>;
+                layers = <0>;
             };
             combo_rshift {
                 timeout-ms = <50>;
