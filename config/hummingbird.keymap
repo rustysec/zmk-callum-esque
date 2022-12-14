@@ -230,7 +230,7 @@
 
             fun {
 		bindings = <
-            &kp F12     &kp F7      &kp F8      &kp F9      &kp PSCRN   /**/ /**/	    &none       &none       &none       &none       &none 
+            &kp F12     &kp F7      &kp F8      &kp F9      &kp PSCRN   /**/ /**/	    &none       &none       &none       &none       &bootloader 
             &kp F11     &kp F4      &kp F5      &kp F6      &kp SLCK    /**/ /**/       &none       &kp RSHFT   &kp RCTRL   &kp RALT    &kp RGUI
             /*F10*/     &kp F1      &kp F2      &kp F3      /*PB*/      /**/ /**/                   &none       &none       &none
                                                 &none       &none                       &none       &none
