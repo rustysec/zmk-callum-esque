@@ -71,8 +71,47 @@
             
             combo_caps_word {
                 timeout-ms = <50>;
-                key-positions = <2 3>;
+                key-positions = <4 14>;
                 bindings = <&caps_word>;
+                layers = <0>;
+            };
+
+            // modifier combos
+            combo_lshift {
+                timeout-ms = <50>;
+                key-positions = <2 3>;
+                bindings = <&kp RSHIFT>;
+                layels = <0>;
+            };
+            combo_lalt {
+                timeout-ms = <50>;
+                key-positions = <1 2>;
+                bindings = <&kp RALT>;
+                layels = <0>;
+            };
+            combo_lctrl {
+                timeout-ms = <50>;
+                key-positions = <0 1>;
+                bindings = <&kp RCTRL>;
+                layels = <0>;
+            };
+            combo_rshift {
+                timeout-ms = <50>;
+                key-positions = <6 7>;
+                bindings = <&kp RSHIFT>;
+                layers = <0>;
+            };
+
+            combo_ralt {
+                timeout-ms = <50>;
+                key-positions = <7 8>;
+                bindings = <&kp RALT>;
+                layers = <0>;
+            };
+            combo_rctrl {
+                timeout-ms = <50>;
+                key-positions = <8 9>;
+                bindings = <&kp RCTRL>;
                 layers = <0>;
             };
             
