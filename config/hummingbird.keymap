@@ -54,42 +54,42 @@
             compatible = "zmk,combos";
 
             combo_esc {
-                timeout-ms = <20>;
+                timeout-ms = <50>;
                 key-positions = <11 12>;
                 bindings = <&kp ESC>;
                 layers = <0>;
             };
 
             combo_tab {
-                timeout-ms = <20>;
+                timeout-ms = <50>;
                 key-positions = <12 13>;
                 bindings = <&kp TAB>;
                 layers = <0>;
             };
 
             combo_ret {
-                timeout-ms = <20>;
+                timeout-ms = <50>;
                 key-positions = <17 18>;
                 bindings = <&kp RET>;
                 layers = <0>;
             };
             
             combo_caps_word {
-                timeout-ms = <20>;
+                timeout-ms = <50>;
                 key-positions = <21 22>;
                 bindings = <&caps_word>;
                 layers = <0>;
             };
             
             combo_fun {
-                timeout-ms = <20>;
+                timeout-ms = <50>;
                 key-positions = <28 29>;
                 bindings = <&mo _FUN>;
                 layers = <0>;
             };
             
             combo_k {
-                timeout-ms = <20>;
+                timeout-ms = <50>;
                 key-positions = <16 28>;
                 bindings = <&kp K>;
                 layers = <0 1 2 3 4 5>;
@@ -97,7 +97,7 @@
             };
             
             combo_k_new {
-                timeout-ms = <20>;
+                timeout-ms = <50>;
                 key-positions = <5 15>;
                 bindings = <&kp K>;
                 layers = <0>;
@@ -105,21 +105,34 @@
             };
 
             combo_z {
-                timeout-ms = <20>;
+                timeout-ms = <50>;
                 key-positions = <10 11>;
+                bindings = <&kp Z>;
+                layers = <0 3 4>;
+            };
+
+            combo_z_new {
+                timeout-ms = <50>;
+                key-positions = <0 10>;
                 bindings = <&kp Z>;
                 layers = <0 3 4>;
             };
             
             // Slash position combos
             combo_slash {
-                timeout-ms = <20>;
+                timeout-ms = <50>;
                 key-positions = <18 19>;
                 bindings = <&kp SLASH>;
                 layers = <0 1>;
             };
+            combo_slash_new {
+                timeout-ms = <50>;
+                key-positions = <9 19>;
+                bindings = <&kp SLASH>;
+                layers = <0 1>;
+            };
             combo_bt3 {
-                timeout-ms = <20>;
+                timeout-ms = <50>;
                 key-positions = <18 19>;
                 bindings = <&bt BT_SEL 3>;
                 layers = <2>;
@@ -128,42 +141,42 @@
 
             // B position combos
             combo_b {
-                timeout-ms = <20>;
+                timeout-ms = <50>;
                 key-positions = <13 27>;
                 bindings = <&kp B>;
                 layers = <0>;
                 slow-release;
             };
-            combo_b_minus {
-                timeout-ms = <20>;
+            combo_b_bslh {
+                timeout-ms = <50>;
                 key-positions = <13 27>;
-                bindings = <&kp MINUS>;
+                bindings = <&kp BSLH>;
                 layers = <3>;
             };
-            combo_b_underscore {
-                timeout-ms = <20>;
+            combo_b_pipe {
+                timeout-ms = <50>;
                 key-positions = <13 27>;
-                bindings = <&kp UNDER>;
+                bindings = <&kp PIPE>;
                 layers = <4>;
             };
             
             combo_new_b {
-                timeout-ms = <20>;
+                timeout-ms = <50>;
                 key-positions = <4 14>;
                 bindings = <&kp B>;
                 layers = <0>;
                 slow-release;
             };
-            combo_new_b_minus {
-                timeout-ms = <20>;
+            combo_new_b_bslh {
+                timeout-ms = <50>;
                 key-positions = <4 14>;
-                bindings = <&kp MINUS>;
+                bindings = <&kp BSLH>;
                 layers = <3>;
             };
-            combo_new_b_underscore {
-                timeout-ms = <20>;
+            combo_new_b_pipe {
+                timeout-ms = <50>;
                 key-positions = <4 14>;
-                bindings = <&kp UNDER>;
+                bindings = <&kp PIPE>;
                 layers = <4>;
             };
         };
@@ -194,8 +207,8 @@
 
        		nav {
 		bindings = <
-            &none       &none       &none       &none       &none       /**/ /**/       &none       &none       &none       &none       &none  
-            &sk LGUI    &sk LALT    &sk LCTRL   &sk LSHFT   &none       /**/ /**/       &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp CAPS
+            &none       &none       &none       &none       &none       /**/ /**/       &none       &none       &none       &none       &kp CAPS
+            &sk LGUI    &sk LALT    &sk LCTRL   &sk LSHFT   &none       /**/ /**/       &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &none
                         &none       &none       &none                   /**/ /**/                   &none       &trans      &none
                                                 &none       &none                       &none       &none
 		>;
@@ -215,7 +228,7 @@
             &kp LBKT    &kp N7      &kp N8      &kp N9      &kp RBKT    /**/ /**/  	    &none       &none       &none       &none       &none 
             &kp SEMI    &kp N4      &kp N5      &kp N6      &kp EQUAL   /**/ /**/       &none       &sk RSHFT   &sk RCTRL   &sk RALT    &sk RGUI
             /*`*/       &kp N1      &kp N2      &kp N3      /*BSLH*/    /**/ /**/                   &none       &kp DOT     &kp MINUS
-                                                &kp N0      &kp DOT                     &none       &none
+                                                &kp N0      &kp MINUS                   &none       &none
 		>;
 		};	
 		
