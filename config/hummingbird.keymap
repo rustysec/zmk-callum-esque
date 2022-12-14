@@ -151,17 +151,24 @@
                 slow-release;
             };
 
+            // z position
             combo_z {
-                timeout-ms = <50>;
-                key-positions = <10 11>;
-                bindings = <&kp Z>;
-                layers = <0 3 4>;
-            };
-            combo_z_new {
                 timeout-ms = <50>;
                 key-positions = <0 10>;
                 bindings = <&kp Z>;
-                layers = <0 3 4>;
+                layers = <0>;
+            };
+            combo_grave {
+                timeout-ms = <50>;
+                key-positions = <0 10>;
+                bindings = <&kp GRAVE>;
+                layers = <3>;
+            };
+            combo_tilde {
+                timeout-ms = <50>;
+                key-positions = <0 10>;
+                bindings = <&kp TILDE>;
+                layers = <4>;
             };
             
             // Slash position combos
