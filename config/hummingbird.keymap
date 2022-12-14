@@ -25,24 +25,9 @@
 #define BT3         &bt BT_SEL 3
 
 #define SPC_SYM     &lt _SYM   SPC
-#define V_MED       &lt _MEDIA V
 #define ESC_MED     &lt _MEDIA ESC
-#define B_NAV       &lt _NAV   B
 #define BSPC_NAV    &lt _NAV   BSPC
-#define K_SYM       &lt _SYM   K
-#define M_NUM       &lt _NUM   M
 #define RET_NUM     &lt _NUM   RET
-#define COMMA_FUN   &lt _FUN   COMMA
-
-#define A_GUI       &hm LGUI  A
-#define R_ALT       &hm LALT  R
-#define S_CTRL      &hm LCTRL S
-#define T_SHFT      &hm LSHFT T
-
-#define N_SHFT      &hm RSHFT N
-#define E_CTRL      &hm RCTRL E
-#define I_ALT       &hm RALT  I
-#define O_GUI       &hm RGUI  O
 
 &kscan0 {
     debounce-period  = <12>;
@@ -202,7 +187,7 @@
 		bindings = <
             &kp Q       &kp W       &kp F       &kp P       &kp G       /**/ /**/       &kp J       &kp L       &kp U       &kp Y       &kp SQT
             &kp A       &kp R       &kp S       &kp T       &kp D 	    /**/ /**/	    &kp H       &kp N       &kp E       &kp I       &kp O
-            /*z*/       &kp X       &kp C       V_MED       /*b*/       /**/ /**/       /*k*/       M_NUM       COMMA_FUN   &kp DOT     /*SLASH*/
+            /*z*/       &kp X       &kp C       &kp V       /*b*/       /**/ /**/       /*k*/       &kp M       &kp COMMA   &kp DOT     /*SLASH*/
                                                 ESC_MED     BSPC_NAV                    SPC_SYM     RET_NUM
 		>;
 		};
