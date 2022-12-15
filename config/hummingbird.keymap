@@ -39,6 +39,10 @@
     quick-tap-ms = <185>;
 };
 
+&sk {
+    quick-release;
+}
+
 &caps_word {
     continue-list = <UNDERSCORE MINUS BACKSPACE>;
 };
@@ -95,13 +99,13 @@
                 bindings = <&kp RCTRL>;
                 layers = <0>;
             };
+
             combo_rshift {
                 timeout-ms = <50>;
                 key-positions = <6 7>;
                 bindings = <&kp RSHIFT>;
                 layers = <0>;
             };
-
             combo_ralt {
                 timeout-ms = <50>;
                 key-positions = <7 8>;
@@ -118,32 +122,25 @@
             // layer combos
             combo_media {
                 timeout-ms = <50>;
-                key-positions = <22 27>;
+                key-positions = <26 27>;
                 bindings = <&mo _MEDIA>;
                 layers = <0>;
             };
             combo_sym {
                 timeout-ms = <50>;
-                key-positions = <23 28>;
+                key-positions = <28 29>;
                 bindings = <&mo _SYM>;
                 layers = <0>;
             };
             combo_fun {
                 timeout-ms = <50>;
-                key-positions = <28 29>;
+                key-positions = <23 28>;
                 bindings = <&mo _FUN>;
                 layers = <0>;
             };
             
             // letter/symbols
             combo_k {
-                timeout-ms = <50>;
-                key-positions = <16 28>;
-                bindings = <&kp K>;
-                layers = <0 1 2 3 4 5>;
-                slow-release;
-            };
-            combo_k_new {
                 timeout-ms = <50>;
                 key-positions = <23 24>;
                 bindings = <&kp K>;
@@ -170,6 +167,12 @@
                 bindings = <&kp TILDE>;
                 layers = <4>;
             };
+            combo_f10 {
+                timeout-ms = <50>;
+                key-positions = <0 10>;
+                bindings = <&kp F10>;
+                layers = <5>;
+            };
             
             // Slash position combos
             combo_slash {
@@ -189,55 +192,33 @@
             // B position combos
             combo_b {
                 timeout-ms = <50>;
-                key-positions = <13 27>;
+                key-positions = <21 22>;
                 bindings = <&kp B>;
                 layers = <0>;
                 slow-release;
             };
             combo_b_bslh {
                 timeout-ms = <50>;
-                key-positions = <13 27>;
+                key-positions = <21 22>;
                 bindings = <&kp BSLH>;
                 layers = <3>;
             };
             combo_b_pipe {
                 timeout-ms = <50>;
-                key-positions = <13 27>;
-                bindings = <&kp PIPE>;
-                layers = <4>;
-            };
-            
-            combo_new_b {
-                timeout-ms = <50>;
-                key-positions = <21 22>;
-                bindings = <&kp B>;
-                layers = <0>;
-                slow-release;
-            };
-            combo_new_b_bslh {
-                timeout-ms = <50>;
-                key-positions = <21 22>;
-                bindings = <&kp BSLH>;
-                layers = <3>;
-            };
-            combo_new_b_pipe {
-                timeout-ms = <50>;
                 key-positions = <21 22>;
                 bindings = <&kp PIPE>;
                 layers = <4>;
+            };
+            combo_b_pause_break {
+                timeout-ms = <50>;
+                key-positions = <21 22>;
+                bindings = <&kp PAUSE_BREAK>;
+                layers = <5>;
             };
         };
     
         behaviors {
-            hm: homerow_mods {
-                compatible = "zmk,behavior-hold-tap";
-                label = "HOMEROW_MODS";
-                #binding-cells = <2>;
-                tapping-term-ms = <220>;
-                quick-tap-ms = <20>;
-                flavor = "tap-preferred";
-                bindings = <&kp>, <&kp>;
-            };
+            // removed hrm configurations
         };
 
         keymap {
