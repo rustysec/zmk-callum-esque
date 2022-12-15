@@ -24,6 +24,8 @@
 #define BT2         &bt BT_SEL 2
 #define BT3         &bt BT_SEL 3
 
+#define SK(KEY)     &nk KEY KEY
+
 &kscan0 {
     debounce-period  = <12>;
 };
@@ -208,7 +210,7 @@
        		nav {
 		bindings = <
             &none       &none       &none       &none       &none       /**/ /**/       &none       &none       &none       &none       &kp CAPS
-            &nk LGUI    &nk LALT    &nk LCTRL   &nk LSHFT   &none       /**/ /**/       &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &none
+            SK(LGUI)    SK(LALT)    SK(LCTRL)   SK(LSHFT)   &none       /**/ /**/       &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &none
                         &none       &none       &none                   /**/ /**/                   &none       &trans      &none
                                                 &none       &none                       &none       &none
 		>;
@@ -217,7 +219,7 @@
             media {
 		bindings = <
             &none       &none       &none       &none       &none       /**/ /**/  	    &none       &none       &none       &none       &none  
-            &nk LGUI    &nk LALT    &nk LCTRL   &nk LSHFT   &none       /**/ /**/       &kp C_PP    VOL_D       VOL_U       &kp C_PREV  &none
+            SK(LGUI)    SK(LALT)    SK(LCTRL)   SK(LSHFT)   &none       /**/ /**/       &kp C_PP    VOL_D       VOL_U       &kp C_PREV  &none
                         &none       &none       &none                   /**/ /**/                   BT0         BT1         BT2         /*BT3*/
                                                 &none       &none                       &none       &none
 		>;
@@ -226,7 +228,7 @@
             num {
 		bindings = <
             &kp LBKT    &kp N7      &kp N8      &kp N9      &kp RBKT    /**/ /**/  	    &none       &none       &none       &none       &none 
-            &kp SEMI    &kp N4      &kp N5      &kp N6      &kp EQUAL   /**/ /**/       &none       &nk RSHFT   &nk RCTRL   &nk RALT    &nk RGUI
+            &kp SEMI    &kp N4      &kp N5      &kp N6      &kp EQUAL   /**/ /**/       &none       SK(RSHFT)   SK(RCTRL)   SK(RALT)    SK(RGUI)
             /*`*/       &kp N1      &kp N2      &kp N3      /*BSLH*/    /**/ /**/                   &none       &kp DOT     &kp MINUS
                                                 &kp N0      &kp MINUS                   &none       &none
 		>;
@@ -235,7 +237,7 @@
             sym {
 		bindings = <
             &kp LBRC    &kp AMPS    &kp STAR    &kp LPAR    &kp RBRC    /**/ /**/       &kp RPAR    &kp LPAR    &kp RPAR    &none       &none 
-            &kp COLON   &kp DLLR    &kp PERCENT &kp CARET   &kp PLUS    /**/ /**/       &none       &nk RSHFT   &nk RCTRL   &nk RALT    &nk RGUI
+            &kp COLON   &kp DLLR    &kp PERCENT &kp CARET   &kp PLUS    /**/ /**/       &none       SK(RSHFT)   SK(RCTRL)   SK(RALT)    SK(RGUI)
             /*~*/       &kp EXCL    &kp AT      &kp HASH    /*PIPE*/    /**/ /**/       &none       &kp UNDER   &none
                                                 &kp RPAR    &kp UNDER                   &none       &none
 		>;
@@ -244,7 +246,7 @@
             fun {
 		bindings = <
             &kp F12     &kp F7      &kp F8      &kp F9      &kp PSCRN   /**/ /**/	    &none       &none       &none       &none       &bootloader 
-            &kp F11     &kp F4      &kp F5      &kp F6      &kp SLCK    /**/ /**/       &none       &nk RSHFT   &nk RCTRL   &nk RALT    &nk RGUI
+            &kp F11     &kp F4      &kp F5      &kp F6      &kp SLCK    /**/ /**/       &none       SK(RSHFT)   SK(RCTRL)   SK(RALT)    SK(RGUI)
             /*F10*/     &kp F1      &kp F2      &kp F3      /*PB*/      /**/ /**/                   &none       &none       &none
                                                 &none       &none                       &none       &none
 		>;
