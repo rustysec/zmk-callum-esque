@@ -85,19 +85,19 @@
             // layer combos
             combo_media {
                 timeout-ms = <50>;
-                key-positions = <40 41>;
+                key-positions = <39 40>;
                 bindings = <&mo _MEDIA>;
                 layers = <0>;
             };
             combo_sym {
                 timeout-ms = <50>;
-                key-positions = <44 45>;
+                key-positions = <43 44>;
                 bindings = <&mo _SYM>;
                 layers = <0>;
             };
             combo_fun {
                 timeout-ms = <50>;
-                key-positions = <41 46>;
+                key-positions = <39 44>;
                 bindings = <&mo _FUN>;
                 layers = <0>;
             };
