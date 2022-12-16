@@ -23,7 +23,6 @@
 #define BT1         &bt BT_SEL 1
 #define BT2         &bt BT_SEL 2
 #define BT3         &bt BT_SEL 3
-#define BT_CLR      &bt BT_CLR
 
 #define SK(KEY)     &nk KEY KEY
 
@@ -145,7 +144,7 @@
 		bindings = <
             &none   &none       &none       &none       &none       &none       /**/        /**/  	&none       &none       &none       &none       &none       &none
             &none   SK(LGUI)    SK(LALT)    SK(LCTRL)   SK(LSHFT)   &none       /**/        /**/    &kp C_PP    VOL_D       VOL_U       &kp C_PREV  &none       &none
-            &none   &none       &none       &none       &none       &none       /**/        /**/    BT_CLR      BT0         BT1         BT2         BT3         &none
+            &none   &none       &none       &none       &none       &none       /**/        /**/    &bt BT_CLR  BT0         BT1         BT2         BT3         &none
                     &none       &none       &none       &none       &none       &none       &none   &none       &none       &none       &none
 		>;
 		};	
