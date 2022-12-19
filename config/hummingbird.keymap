@@ -114,47 +114,23 @@
             // z position
             combo_z {
                 timeout-ms = <50>;
-                key-positions = <0 10>;
+                key-positions = <20 21>;
                 bindings = <&kp Z>;
                 layers = <0>;
             };
             combo_grave {
                 timeout-ms = <50>;
-                key-positions = <0 10>;
+                key-positions = <20 21>;
                 bindings = <&kp GRAVE>;
                 layers = <3>;
             };
             combo_tilde {
                 timeout-ms = <50>;
-                key-positions = <0 10>;
+                key-positions = <20 21>;
                 bindings = <&kp TILDE>;
                 layers = <4>;
             };
             combo_f10 {
-                timeout-ms = <50>;
-                key-positions = <0 10>;
-                bindings = <&kp F10>;
-                layers = <5>;
-            };
-            combo_z_new {
-                timeout-ms = <50>;
-                key-positions = <20 21>;
-                bindings = <&kp Z>;
-                layers = <0>;
-            };
-            combo_grave_new {
-                timeout-ms = <50>;
-                key-positions = <20 21>;
-                bindings = <&kp GRAVE>;
-                layers = <3>;
-            };
-            combo_tilde_new {
-                timeout-ms = <50>;
-                key-positions = <20 21>;
-                bindings = <&kp TILDE>;
-                layers = <4>;
-            };
-            combo_f10_new {
                 timeout-ms = <50>;
                 key-positions = <20 21>;
                 bindings = <&kp F10>;
@@ -164,29 +140,16 @@
             // Slash position combos
             combo_slash {
                 timeout-ms = <50>;
-                key-positions = <9 19>;
+                key-positions = <24 25>;
                 bindings = <&kp SLASH>;
                 layers = <0 1>;
             };
             combo_bt3 {
                 timeout-ms = <50>;
-                key-positions = <9 19>;
-                bindings = <&bt BT_SEL 3>;
-                layers = <2>;
-            };
-            combo_slash_new {
-                timeout-ms = <50>;
-                key-positions = <24 25>;
-                bindings = <&kp SLASH>;
-                layers = <0 1>;
-            };
-            combo_bt3_new {
-                timeout-ms = <50>;
                 key-positions = <24 25>;
                 bindings = <&bt BT_SEL 3>;
                 layers = <2>;
             };
-
 
             // B position combos
             combo_b {
