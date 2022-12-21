@@ -98,7 +98,7 @@
             combo_sym_new {
                 timeout-ms = <50>;
                 key-positions = <23 28>;
-                bindings = <&mo _FUN>;
+                bindings = <&mo _SYM>;
                 layers = <0>;
             };
             combo_fun {
