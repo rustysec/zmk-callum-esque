@@ -103,7 +103,7 @@
             };
             combo_fun {
                 timeout-ms = <50>;
-                key-positions = <23 28>;
+                key-positions = <24 28>;
                 bindings = <&mo _FUN>;
                 layers = <1>;
             };
