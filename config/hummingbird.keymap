@@ -30,6 +30,10 @@
     debounce-period  = <12>;
 };
 
+&sk {
+    quick-release;
+};
+
 &caps_word {
     continue-list = <UNDERSCORE MINUS BACKSPACE>;
 };
