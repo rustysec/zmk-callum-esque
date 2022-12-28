@@ -46,6 +46,10 @@
     quick-release;
 };
 
+&sl {
+    quick-release;
+};
+
 
 &caps_word {
     continue-list = <UNDERSCORE MINUS BACKSPACE>;
