@@ -111,21 +111,21 @@
             // Sticky key on tap, normal key on hold
             // Useful for modifier-clicking without the modifier remaining active
             nk: not_so_sticky_key {
-              compatible = "zmk,behavior-hold-tap";
-              label = "NOT_SO_STICKY_KEY";
-              #binding-cells = <2>;
-              tapping_term_ms = <200>;
-              flavor = "tap-preferred";
-              bindings = <&kp>, <&sk>;
+                compatible = "zmk,behavior-hold-tap";
+                label = "NOT_SO_STICKY_KEY";
+                #binding-cells = <2>;
+                tapping_term_ms = <200>;
+                flavor = "tap-preferred";
+                bindings = <&kp>, <&sk>;
             };
 
             nl: not_so_sticky_layer {
-              compatible = "zmk,behavior-hold-tap";
-              label = "NOT_SO_STICKY_LAYER";
-              #binding-cells = <2>;
-              tapping_term_ms = <200>;
-              flavor = "tap-preferred";
-              bindings = <&mo>, <&sl>;
+                compatible = "zmk,behavior-hold-tap";
+                label = "NOT_SO_STICKY_LAYER";
+                #binding-cells = <2>;
+                tapping_term_ms = <200>;
+                flavor = "tap-preferred";
+                bindings = <&mo>, <&sl>;
             };
         };
 
