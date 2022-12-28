@@ -25,6 +25,7 @@
 #define BT3         &bt BT_SEL 3
 
 #define SK(KEY)     &nk KEY KEY
+#define SL(LAYER)   &nl LAYER LAYER
 
 &kscan0 {
     debounce-period  = <12>;
@@ -117,6 +118,15 @@
               flavor = "tap-preferred";
               bindings = <&kp>, <&sk>;
             };
+
+            nl: not_so_sticky_layer {
+              compatible = "zmk,behavior-hold-tap";
+              label = "NOT_SO_STICKY_LAYER";
+              #binding-cells = <2>;
+              tapping_term_ms = <200>;
+              flavor = "tap-preferred";
+              bindings = <&mo>, <&sl>;
+            };
         };
 
         keymap {
@@ -127,7 +137,7 @@
             &none   &kp Q       &kp W       &kp F       &kp P       &kp G       /**/        /**/    &kp J       &kp L       &kp U       &kp Y       &kp SQT     &none
             &none   &kp A       &kp R       &kp S       &kp T       &kp D       /**/        /**/    &kp H       &kp N       &kp E       &kp I       &kp O       &none
             &none   &kp Z       &kp X       &kp C       &kp V       &kp B       /**/        /**/    &kp K       &kp M       &kp COMMA   &kp DOT     &kp SLASH   &none
-                    &none       &none       &none       &mo _NAV    &kp BSPC    &none       &none   &kp SPC     &mo _NUM    &none       &none       &none
+                    &none       &none       &none       SL(_NAV)    &kp BSPC    &none       &none   &kp SPC     SL(_NUM)    &none       &none       &none
 		>;
 		};
 
