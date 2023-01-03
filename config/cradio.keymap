@@ -10,10 +10,8 @@
 
 #define             _BASE    0
 #define             _NAV     1
-#define             _MEDIA   2
-#define             _NUM     3
-#define             _SYM     4
-#define             _FUN     5
+#define             _NUM     2
+#define             _FUN     3
 
 #define VOL_U       &kp C_VOL_UP
 #define VOL_D       &kp C_VOL_DN
@@ -72,38 +70,11 @@
             };
             
             // layer combos
-            combo_media {
-                timeout-ms = <50>;
-                key-positions = <26 27>;
-                bindings = <&mo _MEDIA>;
-                layers = <0>;
-            };
-            combo_sym {
-                timeout-ms = <50>;
-                key-positions = <28 29>;
-                bindings = <&mo _SYM>;
-                layers = <0>;
-            };
-            combo_sym_new {
-                timeout-ms = <50>;
-                key-positions = <23 28>;
-                bindings = <&mo _SYM>;
-                layers = <0>;
-            };
             combo_fun {
                 timeout-ms = <50>;
-                key-positions = <24 28>;
+                key-positions = <32 33>;
                 bindings = <&mo _FUN>;
                 layers = <1>;
-            };
-            
-            // letter/symbols
-            combo_k {
-                timeout-ms = <50>;
-                key-positions = <23 24>;
-                bindings = <&kp K>;
-                layers = <0>;
-                slow-release;
             };
         };
     
@@ -136,37 +107,18 @@
 
        		nav {
 		bindings = <
-            &none       &none       &none       &none       &none       /**/ /**/       &none       &none       &none       &none       &none
+            &none       &none       &none       &none       &none       /**/ /**/       &kp C_PP    VOL_D       VOL_UP      &none       &none
             SK(LGUI)    SK(LALT)    SK(LCTRL)   SK(LSHFT)   &none       /**/ /**/       &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &none
-            &none       &none       &none       &none       &none       /**/ /**/       &none       &none       &trans      &none       &none 
+            &none       &none       &none       &none       &none       /**/ /**/       BTCLR       BT0         BT1         BT2         BT3
                                                 &none       &none                       &none       &none
 		>;
 		};
-		
-            media {
-		bindings = <
-            &none       &none       &none       &none       &none       /**/ /**/  	    &none       &none       &none       &none       &none  
-            SK(LGUI)    SK(LALT)    SK(LCTRL)   SK(LSHFT)   &none       /**/ /**/       &kp C_PP    VOL_D       VOL_U       &kp C_PREV  &none
-                        &none       &none       &none       &none       /**/ /**/       BTCLR       BT0         BT1         BT2         BT3
-                                                &none       &none                       &none       &none
-		>;
-		};	
-		
             num {
 		bindings = <
             &kp LBKT    &kp N7      &kp N8      &kp N9      &kp RBKT    /**/ /**/  	    &kp LBRC    &kp LPAR    &kp RPAR    &kp RBRC    &none 
             &kp SEMI    &kp N4      &kp N5      &kp N6      &kp EQUAL   /**/ /**/       &none       SK(RSHFT)   SK(RCTRL)   SK(RALT)    SK(RGUI)
             &kp GRAVE   &kp N1      &kp N2      &kp N3      &kp BSLH    /**/ /**/       &none       &none       &none       &kp DOT     &none
                                                 &kp N0      &kp MINUS                   &none       &none
-		>;
-		};	
-		
-            sym {
-		bindings = <
-            &kp LBRC    &kp AMPS    &kp STAR    &kp LPAR    &kp RBRC    /**/ /**/       &kp LBKT    &kp LPAR    &kp RPAR    &kp RBKT    &none 
-            &kp COLON   &kp DLLR    &kp PERCENT &kp CARET   &kp PLUS    /**/ /**/       &none       SK(RSHFT)   SK(RCTRL)   SK(RALT)    SK(RGUI)
-            &kp TILDE   &kp EXCL    &kp AT      &kp HASH    &kp PIPE    /**/ /**/       &none       &kp UNDER   &none       &none       &none
-                                                &kp RPAR    &kp UNDER                   &none       &none
 		>;
 		};	
 
