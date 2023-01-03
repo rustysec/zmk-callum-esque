@@ -137,7 +137,7 @@
 
        		nav {
 		bindings = <
-            &none   &none       &none       &none       &none       &none       /**/        /**/    &none       &none       &none       &none       &kp CAPS    &none
+            &none   &none       &none       &none       &none       &none       /**/        /**/    &none       &none       &none       &none       &none       &none
             &none   SK(LGUI)    SK(LALT)    SK(LCTRL)   SK(LSHFT)   &none       /**/        /**/    &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &none       &none
             &none   &none       &none       &none       &none       &none       /**/        /**/    &none       &none       &none       &none       &none       &none
                     &none       &none       &none       &none       &none       &none       &none   &none       &none       &none       &none       &none
