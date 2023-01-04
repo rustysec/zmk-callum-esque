@@ -8,12 +8,10 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-#define             _BASE    0
-#define             _NAV     1
-#define             _MEDIA   2
-#define             _NUM     3
-#define             _SYM     4
-#define             _FUN     5
+#define             BASE    0
+#define             NAV     1
+#define             NUM     2
+#define             FUN     3
 
 #define VOL_U       &kp C_VOL_UP
 #define VOL_D       &kp C_VOL_DN
@@ -62,48 +60,36 @@
                 timeout-ms = <30>;
                 key-positions = <14 15>;
                 bindings = <&kp ESC>;
-                layers = <0>;
+                layers = <BASE>;
             };
 
             combo_tab {
                 timeout-ms = <30>;
                 key-positions = <15 16>;
                 bindings = <&kp TAB>;
-                layers = <0>;
+                layers = <BASE>;
             };
 
             combo_ret {
                 timeout-ms = <30>;
                 key-positions = <20 21>;
                 bindings = <&kp RET>;
-                layers = <0 1 2 3 4 5>;
+                layers = <BASE NAV NUM FUN>;
             };
             
             combo_caps_word {
                 timeout-ms = <50>;
                 key-positions = <5 17>;
                 bindings = <&caps_word>;
-                layers = <0>;
+                layers = <BASE>;
             };
             
             // layer combos
-            combo_media {
-                timeout-ms = <50>;
-                key-positions = <39 40>;
-                bindings = <&mo _MEDIA>;
-                layers = <0>;
-            };
-            combo_sym {
-                timeout-ms = <50>;
-                key-positions = <43 44>;
-                bindings = <&mo _SYM>;
-                layers = <0>;
-            };
             combo_fun {
                 timeout-ms = <50>;
-                key-positions = <39 44>;
-                bindings = <&mo _FUN>;
-                layers = <0>;
+                key-positions = <43 44>;
+                bindings = <&mo FUN>;
+                layers = <BASE>;
             };
 
         };
@@ -131,43 +117,25 @@
             &none   &kp Q       &kp W       &kp F       &kp P       &kp G       /**/        /**/    &kp J       &kp L       &kp U       &kp Y       &kp SQT     &none
             &none   &kp A       &kp R       &kp S       &kp T       &kp D       /**/        /**/    &kp H       &kp N       &kp E       &kp I       &kp O       &none
             &none   &kp Z       &kp X       &kp C       &kp V       &kp B       /**/        /**/    &kp K       &kp M       &kp COMMA   &kp DOT     &kp SLASH   &none
-                    &none       &none       &none       &mo _NAV    &kp BSPC    &none       &none   &kp SPC     &mo _NUM    &none       &none       &none
+                    &none       &none       &none       &mo NAV     &kp BSPC    &none       &none   &kp SPC     &mo NUM     &none       &none       &none
 		>;
 		};
 
        		nav {
 		bindings = <
-            &none   &none       &none       &none       &none       &none       /**/        /**/    &none       &none       &none       &none       &none       &none
+            &none   &none       &none       &none       &none       &none       /**/        /**/    &kp C_PP    VOL_D       VOL_U       &kp C_PREV  &none       &none
             &none   SK(LGUI)    SK(LALT)    SK(LCTRL)   SK(LSHFT)   &none       /**/        /**/    &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &none       &none
-            &none   &none       &none       &none       &none       &none       /**/        /**/    &none       &none       &none       &none       &none       &none
+            &none   &none       &none       &none       &none       &none       /**/        /**/    &bt BT_CLR  BT0         BT1         BT2         BT3         &none
                     &none       &none       &none       &none       &none       &none       &none   &none       &none       &none       &none       &none
 		>;
 		};
-		
-            media {
-		bindings = <
-            &none   &none       &none       &none       &none       &none       /**/        /**/  	&none       &none       &none       &none       &none       &none
-            &none   SK(LGUI)    SK(LALT)    SK(LCTRL)   SK(LSHFT)   &none       /**/        /**/    &kp C_PP    VOL_D       VOL_U       &kp C_PREV  &none       &none
-            &none   &none       &none       &none       &none       &none       /**/        /**/    &bt BT_CLR  BT0         BT1         BT2         BT3         &none
-                    &none       &none       &none       &none       &none       &none       &none   &none       &none       &none       &none
-		>;
-		};	
 		
             num {
 		bindings = <
             &none   &kp LBKT    &kp N7      &kp N8      &kp N9      &kp RBKT    /**/        /**/  	&none       &none       &none       &none       &none       &none
             &none   &kp SEMI    &kp N4      &kp N5      &kp N6      &kp EQUAL   /**/        /**/    &none       SK(RSHFT)   SK(RCTRL)   SK(RALT)    SK(RGUI)    &none
-            &none   &kp GRAVE   &kp N1      &kp N2      &kp N3      &kp BSLH    /**/        /**/    &none       &none       &kp DOT     &kp MINUS   &none       &none
+            &none   &kp GRAVE   &kp N1      &kp N2      &kp N3      &kp BSLH    /**/        /**/    &none       &none       &none       &kp DOT     &none       &none
                     &none       &none       &none       &kp N0      &kp MINUS   &none       &none   &none       &none       &none       &none       &none
-		>;
-		};	
-		
-            sym {
-		bindings = <
-            &none   &kp LBRC    &kp AMPS    &kp STAR    &kp LPAR    &kp RBRC    /**/        /**/    &kp RPAR    &kp LPAR    &kp RPAR    &none       &none       &none
-            &none   &kp COLON   &kp DLLR    &kp PERCENT &kp CARET   &kp PLUS    /**/        /**/    &none       SK(RSHFT)   SK(RCTRL)   SK(RALT)    SK(RGUI)    &none
-            &none   &kp TILDE   &kp EXCL    &kp AT      &kp HASH    &kp PIPE    /**/        /**/    &none       &kp UNDER   &none       &none       &none       &none
-                    &none       &none       &none       &kp RPAR    &kp UNDER   &none       &none   &none       &none       &none       &none       &none
 		>;
 		};	
 
