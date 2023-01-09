@@ -123,7 +123,7 @@
 
        		nav {
 		bindings = <
-            &none   &none       &none       &none       &none       &none       /**/        /**/    &kp C_PP    VOL_D       VOL_U       &kp C_PREV  &none       &none
+            &none   &none       &none       &none       &none       &none       /**/        /**/    &kp C_PP    VOL_D       VOL_U       &kp C_PREV  &kp SQT     &none
             &none   SK(LGUI)    SK(LALT)    SK(LCTRL)   SK(LSHFT)   &none       /**/        /**/    &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &none       &none
             &none   &none       &none       &none       &none       &none       /**/        /**/    &bt BT_CLR  BT0         BT1         BT2         BT3         &none
                     &none       &none       &none       &none       &none       &none       &none   &none       &none       &none       &none       &none
