@@ -123,8 +123,8 @@
 
        		nav {
 		bindings = <
-            &none   &none       &none       &none       &none       &none       /**/        /**/    &kp C_PP    VOL_D       VOL_U       &kp C_PREV  &kp SQT     &none
-            &none   SK(LGUI)    SK(LALT)    SK(LCTRL)   SK(LSHFT)   &none       /**/        /**/    &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &none       &none
+            &none   &none       &none       &none       &none       &none       /**/        /**/    &kp C_PP    VOL_D       VOL_U       &kp C_PREV  &trans      &none
+            &none   SK(LGUI)    SK(LALT)    SK(LCTRL)   SK(LSHFT)   &none       /**/        /**/    &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp DEL     &none
             &none   &none       &none       &none       &none       &none       /**/        /**/    &bt BT_CLR  BT0         BT1         BT2         BT3         &none
                     &none       &none       &none       &none       &none       &none       &none   &none       &none       &none       &none       &none
 		>;
@@ -132,7 +132,7 @@
 		
             num {
 		bindings = <
-            &none   &kp LBKT    &kp N7      &kp N8      &kp N9      &kp RBKT    /**/        /**/  	&none       &none       &none       &none       &none       &none
+            &none   &kp LBKT    &kp N7      &kp N8      &kp N9      &kp RBKT    /**/        /**/  	&kp LBRC    &kp LPAR    &kp RPAR    &kp RBRC    &trans      &none
             &none   &kp SEMI    &kp N4      &kp N5      &kp N6      &kp EQUAL   /**/        /**/    &none       SK(RSHFT)   SK(RCTRL)   SK(RALT)    SK(RGUI)    &none
             &none   &kp GRAVE   &kp N1      &kp N2      &kp N3      &kp BSLH    /**/        /**/    &none       &none       &none       &kp DOT     &none       &none
                     &none       &none       &none       &kp N0      &kp MINUS   &none       &none   &none       &none       &none       &none       &none
