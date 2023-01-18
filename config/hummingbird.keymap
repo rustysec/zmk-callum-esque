@@ -62,7 +62,7 @@
             };
             
             combo_caps_word {
-                timeout-ms = <50>;
+                timeout-ms = <30>;
                 key-positions = <4 14>;
                 bindings = <&caps_word>;
                 layers = <BASE>;
@@ -70,7 +70,7 @@
             
             // layer combos
             combo_fun {
-                timeout-ms = <50>;
+                timeout-ms = <30>;
                 key-positions = <28 29>;
                 bindings = <&mo FUN>;
                 layers = <BASE>;
@@ -78,14 +78,14 @@
             
             // letter/symbols
             combo_k {
-                timeout-ms = <50>;
+                timeout-ms = <30>;
                 key-positions = <23 24>;
                 bindings = <&kp K>;
                 layers = <BASE>;
                 slow-release;
             };
             combo_bt_clr {
-                timeout-ms = <50>;
+                timeout-ms = <30>;
                 key-positions = <23 24>;
                 bindings = <&bt BT_CLR>;
                 layers = <NAV>;
@@ -93,19 +93,19 @@
 
             // z position
             combo_z {
-                timeout-ms = <50>;
+                timeout-ms = <30>;
                 key-positions = <20 21>;
                 bindings = <&kp Z>;
                 layers = <BASE>;
             };
             combo_grave {
-                timeout-ms = <50>;
+                timeout-ms = <30>;
                 key-positions = <20 21>;
                 bindings = <&kp GRAVE>;
                 layers = <NUM>;
             };
             combo_f10 {
-                timeout-ms = <50>;
+                timeout-ms = <30>;
                 key-positions = <20 21>;
                 bindings = <&kp F10>;
                 layers = <FUN>;
@@ -113,13 +113,13 @@
             
             // Slash position combos
             combo_slash {
-                timeout-ms = <50>;
+                timeout-ms = <30>;
                 key-positions = <24 25>;
                 bindings = <&kp SLASH>;
                 layers = <BASE>;
             };
             combo_bt3 {
-                timeout-ms = <50>;
+                timeout-ms = <30>;
                 key-positions = <24 25>;
                 bindings = <&bt BT_SEL 3>;
                 layers = <NAV>;
@@ -127,19 +127,19 @@
 
             // B position combos
             combo_b {
-                timeout-ms = <50>;
+                timeout-ms = <30>;
                 key-positions = <21 22>;
                 bindings = <&kp B>;
                 layers = <BASE>;
             };
             combo_b_bslh {
-                timeout-ms = <50>;
+                timeout-ms = <30>;
                 key-positions = <21 22>;
                 bindings = <&kp BSLH>;
                 layers = <NUM>;
             };
             combo_b_pause_break {
-                timeout-ms = <50>;
+                timeout-ms = <30>;
                 key-positions = <21 22>;
                 bindings = <&kp PAUSE_BREAK>;
                 layers = <FUN>;
