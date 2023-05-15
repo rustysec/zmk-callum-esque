@@ -49,7 +49,7 @@
 
             combo_esc {
                 timeout-ms = <30>;
-                key-positions = <12 22>;
+                key-positions = <12 21>;
                 bindings = <&kp ESC>;
                 layers = <BASE>;
             };
