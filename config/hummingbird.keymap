@@ -51,7 +51,7 @@
                 timeout-ms = <30>;
                 key-positions = <12 22>;
                 bindings = <&kp ESC>;
-                layers = <NUM>;
+                layers = <BASE>;
             };
 
             combo_tab_num {
@@ -79,7 +79,7 @@
                 timeout-ms = <30>;
                 key-positions = <16 23>;
                 bindings = <&kp RET>;
-                layers = <NAV NUM FUN>;
+                layers = <BASE>;
             };
             
             combo_caps_word {
