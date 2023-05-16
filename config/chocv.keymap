@@ -45,28 +45,49 @@
                 timeout-ms = <30>;
                 key-positions = <11 12>;
                 bindings = <&kp ESC>;
-                layers = <0>;
+                layers = <_NAV _NUM>;
+            };
+
+            combo_esc_base {
+                timeout-ms = <30>;
+                key-positions = <12 22>;
+                bindings = <&kp ESC>;
+                layers = <_BASE>;
             };
 
             combo_tab {
                 timeout-ms = <30>;
                 key-positions = <12 13>;
                 bindings = <&kp TAB>;
-                layers = <0>;
+                layers = <_NUM>;
+            };
+
+            combo_tab_base {
+                timeout-ms = <30>;
+                key-positions = <13 23>;
+                bindings = <&kp TAB>;
+                layers = <_BASE>;
             };
 
             combo_ret {
                 timeout-ms = <30>;
                 key-positions = <17 18>;
                 bindings = <&kp RET>;
-                layers = <0 1 2 3 4 5>;
+                layers = <_NAV _NUM>;
+            };
+
+            combo_ret_base {
+                timeout-ms = <30>;
+                key-positions = <16 26>;
+                bindings = <&kp RET>;
+                layers = <_BASE>;
             };
             
             combo_caps_word {
                 timeout-ms = <50>;
                 key-positions = <4 14>;
                 bindings = <&caps_word>;
-                layers = <0>;
+                layers = <_NUM>;
             };
             
             // layer combos
