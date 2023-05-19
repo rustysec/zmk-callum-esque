@@ -95,7 +95,23 @@
                 timeout-ms = <50>;
                 key-positions = <33 34>;
                 bindings = <&mo _FUN>;
-                layers = <0>;
+                layers = <_BASE>;
+            };
+            
+            // layer combos
+            combo_home {
+                timeout-ms = <50>;
+                key-positions = <25 26>;
+                bindings = <&kp HOME>;
+                layers = <_NAV _NUM>;
+            };
+            
+            // layer combos
+            combo_end {
+                timeout-ms = <50>;
+                key-positions = <26 27>;
+                bindings = <&kp END>;
+                layers = <_NAV _NUM>;
             };
         };
     
