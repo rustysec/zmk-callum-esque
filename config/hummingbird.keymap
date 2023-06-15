@@ -44,7 +44,7 @@
                 timeout-ms = <30>;
                 key-positions = <11 12>;
                 bindings = <&kp ESC>;
-                layers = <NUM>;
+                layers = <NUM NAV>;
             };
 
             combo_esc {
@@ -58,7 +58,7 @@
                 timeout-ms = <30>;
                 key-positions = <12 13>;
                 bindings = <&kp TAB>;
-                layers = <NUM>;
+                layers = <NUM NAV>;
             };
 
             combo_tab {
