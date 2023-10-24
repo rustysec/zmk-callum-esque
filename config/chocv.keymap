@@ -37,7 +37,7 @@
     continue-list = <UNDERSCORE MINUS BACKSPACE>;
 };
 
-/ { 
+/ {
         combos {
             compatible = "zmk,combos";
 
@@ -82,14 +82,14 @@
                 bindings = <&kp RET>;
                 layers = <_BASE>;
             };
-            
+
             combo_caps_word {
                 timeout-ms = <50>;
                 key-positions = <4 14>;
                 bindings = <&caps_word>;
                 layers = <_NUM>;
             };
-            
+
             // layer combos
             combo_fun {
                 timeout-ms = <50>;
@@ -97,7 +97,7 @@
                 bindings = <&mo _FUN>;
                 layers = <_BASE>;
             };
-            
+
             // layer combos
             combo_home {
                 timeout-ms = <50>;
@@ -105,7 +105,7 @@
                 bindings = <&kp HOME>;
                 layers = <_NAV _NUM>;
             };
-            
+
             // layer combos
             combo_end {
                 timeout-ms = <50>;
@@ -114,9 +114,9 @@
                 layers = <_NAV _NUM>;
             };
         };
-    
+
         behaviors {
-        
+
             // https://github.com/dxmh/zmk-config
             // Sticky key on tap, normal key on hold
             // Useful for modifier-clicking without the modifier remaining active
@@ -132,41 +132,42 @@
 
         keymap {
             compatible = "zmk,keymap";
-                
-       		default_layer {
-		bindings = <
-            &kp Q       &kp W       &kp F       &kp P       &kp G       /**/ /**/       &kp J       &kp L       &kp U       &kp Y       &kp SQT
-            &kp A       &kp R       &kp S       &kp T       &kp D 	    /**/ /**/	    &kp H       &kp N       &kp E       &kp I       &kp O
-            &kp Z       &kp X       &kp C       &kp V       &kp B       /**/ /**/       &kp K       &kp M       &kp COMMA   &kp DOT     &kp SLASH
-                                    &none       &mo _NAV    &kp BSPC                    &kp SPC     &mo _NUM    &none
-		>;
-		};
 
-       		nav {
-		bindings = <
-            &none       &none       &none       &none       &none       /**/ /**/       &kp C_PP    VOL_D       VOL_U       &none       &trans
-            SK(LGUI)    SK(LALT)    SK(LCTRL)   SK(LSHFT)   &none       /**/ /**/       &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp DEL
-            &none       &none       &none       &none       &none       /**/ /**/       BTCLR       BT0         BT1         BT2         BT3
-                                    &none       &none       &none                       &none       &none       &none
-		>;
-		};
+            default_layer {
+            bindings = <
+                &kp Q       &kp W       &kp F       &kp P       &kp G       /**/ /**/       &kp J       &kp L       &kp U       &kp Y       &kp SQT
+                &kp A       &kp R       &kp S       &kp T       &kp D 	    /**/ /**/	    &kp H       &kp N       &kp E       &kp I       &kp O
+                &kp Z       &kp X       &kp C       &kp V       &kp B       /**/ /**/       &kp K       &kp M       &kp COMMA   &kp DOT     &kp SLASH
+                                        &none       &mo _NAV    &kp BSPC                    &kp SPC     &mo _NUM    &none
+            >;
+            };
+
+            nav {
+            bindings = <
+                &none       &none       &none       &none       &none       /**/ /**/       &kp C_PP    VOL_D       VOL_U       &none       &trans
+                SK(LGUI)    SK(LALT)    SK(LCTRL)   SK(LSHFT)   &none       /**/ /**/       &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp DEL
+                &none       &none       &none       &none       &none       /**/ /**/       BTCLR       BT0         BT1         BT2         BT3
+                                        &none       &none       &none                       &none       &none       &none
+            >;
+            };
+
             num {
-		bindings = <
-            &kp LBKT    &kp N7      &kp N8      &kp N9      &kp RBKT    /**/ /**/  	    &kp LBRC    &kp LPAR    &kp RPAR    &kp RBRC    &trans
-            &kp SEMI    &kp N4      &kp N5      &kp N6      &kp EQUAL   /**/ /**/       &none       SK(RSHFT)   SK(RCTRL)   SK(RALT)    SK(RGUI)
-            &kp GRAVE   &kp N1      &kp N2      &kp N3      &kp BSLH    /**/ /**/       &none       &none       &none       &kp DOT     &none
-                                    &none       &kp N0      &kp MINUS                   &none       &none       &none
-		>;
-		};	
+            bindings = <
+                &kp LBKT    &kp N7      &kp N8      &kp N9      &kp RBKT    /**/ /**/  	    &kp LBRC    &kp LPAR    &kp RPAR    &kp RBRC    &trans
+                &kp SEMI    &kp N4      &kp N5      &kp N6      &kp EQUAL   /**/ /**/       &none       SK(RSHFT)   SK(RCTRL)   SK(RALT)    SK(RGUI)
+                &kp GRAVE   &kp N1      &kp N2      &kp N3      &kp BSLH    /**/ /**/       &none       &none       &none       &kp DOT     &none
+                                        &none       &kp N0      &kp MINUS                   &none       &none       &none
+            >;
+            };	
 
             fun {
-		bindings = <
-            &kp F12     &kp F7      &kp F8      &kp F9      &kp PSCRN   /**/ /**/	    &none       &none       &none       &none       &bootloader 
-            &kp F11     &kp F4      &kp F5      &kp F6      &kp SLCK    /**/ /**/       &none       SK(RSHFT)   SK(RCTRL)   SK(RALT)    SK(RGUI)
-            &kp F10     &kp F1      &kp F2      &kp F3      PB          /**/ /**/       &none       &none       &none       &none       &none
-                                    &none       &none       &none                       &none       &none       &none
-		>;
-		};	
-		
-	};
+            bindings = <
+                &kp F12     &kp F7      &kp F8      &kp F9      &kp PSCRN   /**/ /**/	    &none       &none       &none       &none       &bootloader 
+                &kp F11     &kp F4      &kp F5      &kp F6      &kp SLCK    /**/ /**/       &none       SK(RSHFT)   SK(RCTRL)   SK(RALT)    SK(RGUI)
+                &kp F10     &kp F1      &kp F2      &kp F3      PB          /**/ /**/       &none       &none       &none       &none       &none
+                                        &none       &none       &none                       &none       &none       &none
+            >;
+            };	
+
+    };
 };
