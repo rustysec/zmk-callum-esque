@@ -128,7 +128,7 @@
             combo_f10 {
                 timeout-ms = <30>;
                 key-positions = <20 21>;
-                bindings = <&kp F10>;
+                bindings = <&kp F12>;
                 layers = <FUN>;
             };
 
@@ -188,7 +188,7 @@
             default_layer {
                 bindings = <
                     &kp A       &kp W       &kp F       &kp P       &kp G       /**/ /**/       &kp J       &kp L       &kp U       &kp Y       &kp O
-                    &kp Z       &kp R       &kp S       &kp T       &kp D 	    /**/ /**/	    &kp H       &kp N       &kp E       &kp I       &kp SLASH
+                    &kp Z       &kp R       &kp S       &kp T       &kp D       /**/ /**/       &kp H       &kp N       &kp E       &kp I       &kp SLASH
                                 &kp X       &kp C       &kp V       /*b*/       /**/ /**/       /*k*/       &kp M       &kp COMMA   &kp DOT
                                                         &mo NAV     &kp BSPC                    &kp SPC     &mo NUM
                 >;
@@ -196,8 +196,8 @@
 
                 nav {
                 bindings = <
-                    &none       &none       &none       &none       &none       /**/ /**/       &kp C_PP    VOL_D       VOL_U       &kp C_PREV  &kp DEL
-                    SK(LGUI)    SK(LALT)    SK(LCTRL)   SK(LSHFT)   &none       /**/ /**/       &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp BT3
+                    SK(LGUI)    &none       &none       &none       &none       /**/ /**/       &kp C_PP    VOL_D       VOL_U       &kp C_PREV  &kp DEL
+                    &none       SK(LALT)    SK(LCTRL)   SK(LSHFT)   &none       /**/ /**/       &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   BT3
                                 &none       &none       &none                   /**/ /**/       /*BTCLR*/   BT0         BT1         BT2
                                                         &none       &none                       &none       &none
                 >;
@@ -205,7 +205,7 @@
 
                 num {
                 bindings = <
-                    &kp SEMI    &kp N7      &kp N8      &kp N9      &kp RBKT    /**/ /**/  	    &kp LBRC    &kp LPAR    &kp RPAR    &kp RBRC    SK(RGUI)
+                    &kp SEMI    &kp N7      &kp N8      &kp N9      &kp RBKT    /**/ /**/       &kp LBRC    &kp LPAR    &kp RPAR    &kp RBRC    SK(RGUI)
                     &kp GRAVE   &kp N4      &kp N5      &kp N6      &kp EQUAL   /**/ /**/       &none       SK(RSHFT)   SK(RCTRL)   SK(RALT)    &kp SLASH
                                 &kp N1      &kp N2      &kp N3      /*BSLH*/    /**/ /**/                   &kp HOME    &kp END     &kp DOT
                                                         &kp N0      &kp MINUS                   &none       &none
@@ -214,7 +214,7 @@
 
                 fun {
                 bindings = <
-                    &kp F10     &kp F7      &kp F8      &kp F9      &kp PSCRN   /**/ /**/	    &none       &none       &none       &none       SK(RGUI)
+                    &kp F10     &kp F7      &kp F8      &kp F9      &kp PSCRN   /**/ /**/       &none       &none       &none       &none       SK(RGUI)
                     &kp F11     &kp F4      &kp F5      &kp F6      &kp SLCK    /**/ /**/       &none       SK(RSHFT)   SK(RCTRL)   SK(RALT)    &none
                                 &kp F1      &kp F2      &kp F3      /*PB*/      /**/ /**/                   &none       &none       &none
                                                         &none       &none                       &none       &none
