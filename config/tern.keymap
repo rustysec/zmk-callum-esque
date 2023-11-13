@@ -119,9 +119,9 @@
                 bindings = <&kp Q>;
                 layers = <BASE>;
             };
-            combo_grave {
+            combo_lbkt {
                 timeout-ms = <30>;
-                key-positions = <20 21>;
+                key-positions = <1 2>;
                 bindings = <&kp LBKT>;
                 layers = <NUM>;
             };
