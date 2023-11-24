@@ -84,7 +84,7 @@
             };
 
             combo_caps_word {
-                timeout-ms = <50>;
+                timeout-ms = <30>;
                 key-positions = <4 14>;
                 bindings = <&caps_word>;
                 layers = <_NUM>;
@@ -92,26 +92,10 @@
 
             // layer combos
             combo_fun {
-                timeout-ms = <50>;
+                timeout-ms = <30>;
                 key-positions = <33 34>;
                 bindings = <&mo _FUN>;
                 layers = <_BASE>;
-            };
-
-            // layer combos
-            combo_home {
-                timeout-ms = <50>;
-                key-positions = <25 26>;
-                bindings = <&kp HOME>;
-                layers = <_NAV _NUM>;
-            };
-
-            // layer combos
-            combo_end {
-                timeout-ms = <50>;
-                key-positions = <26 27>;
-                bindings = <&kp END>;
-                layers = <_NAV _NUM>;
             };
         };
 
@@ -146,7 +130,7 @@
                 bindings = <
                     &none       &none       &none       &none       &none       /**/ /**/       &kp C_PP    VOL_D       VOL_U       &none       &trans
                     SK(LGUI)    SK(LALT)    SK(LCTRL)   SK(LSHFT)   &none       /**/ /**/       &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp DEL
-                    &none       &none       &none       &none       &none       /**/ /**/       BTCLR       BT0         BT1         BT2         BT3
+                    &none       &none       &none       &none       &none       /**/ /**/       &none       &kp HOME    &kp END     &none       &none
                                                         &none       &none                       &none       &none
                 >;
                 };
@@ -154,7 +138,7 @@
                 bindings = <
                     &kp LBKT    &kp N7      &kp N8      &kp N9      &kp RBKT    /**/ /**/       &kp LBRC    &kp LPAR    &kp RPAR    &kp RBRC    &trans 
                     &kp SEMI    &kp N4      &kp N5      &kp N6      &kp EQUAL   /**/ /**/       &none       SK(RSHFT)   SK(RCTRL)   SK(RALT)    SK(RGUI)
-                    &kp GRAVE   &kp N1      &kp N2      &kp N3      &kp BSLH    /**/ /**/       &none       &none       &none       &kp DOT     &none
+                    &kp GRAVE   &kp N1      &kp N2      &kp N3      &kp BSLH    /**/ /**/       &none       &none       &kp none    &kp DOT     &none
                                                         &kp N0      &kp MINUS                   &none       &none
                 >;
                 };	
@@ -163,7 +147,7 @@
                 bindings = <
                     &kp F12     &kp F7      &kp F8      &kp F9      &kp PSCRN   /**/ /**/       &none       &none       &none       &none       &bootloader 
                     &kp F11     &kp F4      &kp F5      &kp F6      &kp SLCK    /**/ /**/       &none       SK(RSHFT)   SK(RCTRL)   SK(RALT)    SK(RGUI)
-                    &kp F10     &kp F1      &kp F2      &kp F3      PB          /**/ /**/       &none       &none       &none       &none       &none
+                    &kp F10     &kp F1      &kp F2      &kp F3      PB          /**/ /**/       BTCLR       BT0         BT1         BT2         BT3
                                                         &none       &none                       &none       &none
                 >;
             };	

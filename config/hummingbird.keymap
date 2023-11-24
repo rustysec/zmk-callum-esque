@@ -109,7 +109,7 @@
                 timeout-ms = <30>;
                 key-positions = <23 24>;
                 bindings = <&bt BT_CLR>;
-                layers = <NAV>;
+                layers = <FUN>;
             };
 
             // z position
@@ -143,7 +143,7 @@
                 timeout-ms = <30>;
                 key-positions = <24 25>;
                 bindings = <&bt BT_SEL 3>;
-                layers = <NAV>;
+                layers = <FUN>;
             };
 
             // B position combos
@@ -198,7 +198,7 @@
                 bindings = <
                     &none       &none       &none       &none       &none       /**/ /**/       &kp C_PP    VOL_D       VOL_U       &kp C_PREV  &trans
                     SK(LGUI)    SK(LALT)    SK(LCTRL)   SK(LSHFT)   &none       /**/ /**/       &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp DEL
-                                &none       &none       &none                   /**/ /**/       /*BTCLR*/   BT0         BT1         BT2         /*BT3*/
+                                &none       &none       &none                   /**/ /**/       /**/        &kp HOME    &kp END     &none
                                                         &none       &none                       &none       &none
                 >;
                 };
@@ -207,7 +207,7 @@
                 bindings = <
                     &kp LBKT    &kp N7      &kp N8      &kp N9      &kp RBKT    /**/ /**/  	    &kp LBRC    &kp LPAR    &kp RPAR    &kp RBRC    &trans
                     &kp SEMI    &kp N4      &kp N5      &kp N6      &kp EQUAL   /**/ /**/       &none       SK(RSHFT)   SK(RCTRL)   SK(RALT)    SK(RGUI)
-                    /*`*/       &kp N1      &kp N2      &kp N3      /*BSLH*/    /**/ /**/                   &kp HOME    &kp END     &kp DOT
+                    /*`*/       &kp N1      &kp N2      &kp N3      /*BSLH*/    /**/ /**/                   &none       &none       &kp DOT
                                                         &kp N0      &kp MINUS                   &none       &none
                 >;
                 };	
@@ -216,7 +216,7 @@
                 bindings = <
                     &kp F12     &kp F7      &kp F8      &kp F9      &kp PSCRN   /**/ /**/	    &none       &none       &none       &none       &bootloader 
                     &kp F11     &kp F4      &kp F5      &kp F6      &kp SLCK    /**/ /**/       &none       SK(RSHFT)   SK(RCTRL)   SK(RALT)    SK(RGUI)
-                    /*F10*/     &kp F1      &kp F2      &kp F3      /*PB*/      /**/ /**/                   &none       &none       &none
+                    /*F10*/     &kp F1      &kp F2      &kp F3      /*PB*/      /**/ /**/       /*BTCLR*/   BT0         BT1         BT2         /*BT3*/
                                                         &none       &none                       &none       &none
                 >;
                 };
