@@ -130,7 +130,7 @@
                 bindings = <
                     &none       &none       &none       &none       &none       /**/ /**/       &kp C_PP    VOL_D       VOL_U       &none       &trans
                     SK(LGUI)    SK(LALT)    SK(LCTRL)   SK(LSHFT)   &none       /**/ /**/       &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp DEL
-                    &none       &none       &none       &none       &none       /**/ /**/       &none       &kp HOME    &kp END     &none       &none
+                    &none       &none       &none       &none       &none       /**/ /**/       &none       &kp HOME    &kp END     &none       &kp SLASH
                                                         &none       &none                       &none       &none
                 >;
                 };
