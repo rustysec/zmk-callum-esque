@@ -93,7 +93,7 @@
             // layer combos
             combo_fun {
                 timeout-ms = <30>;
-                key-positions = <33 34>;
+                key-positions = <30 33>;
                 bindings = <&mo _FUN>;
                 layers = <_BASE>;
             };
