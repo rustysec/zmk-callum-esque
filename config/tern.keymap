@@ -125,7 +125,7 @@
                 bindings = <&kp LBKT>;
                 layers = <NUM>;
             };
-            combo_f10 {
+            combo_f12 {
                 timeout-ms = <30>;
                 key-positions = <20 21>;
                 bindings = <&kp F12>;

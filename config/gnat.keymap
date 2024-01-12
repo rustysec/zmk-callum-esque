@@ -8,10 +8,10 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-#define             _BASE    0
-#define             _NAV     1
-#define             _NUM     2
-#define             _FUN     3
+#define             BASE    0
+#define             NAV     1
+#define             NUM     2
+#define             FUN     3
 
 #define VOL_U       &kp C_VOL_UP
 #define VOL_D       &kp C_VOL_DN
@@ -43,36 +43,48 @@
 
             combo_esc {
                 timeout-ms = <30>;
-                key-positions = <11 12>;
+                key-positions = <10 11>;
                 bindings = <&kp ESC>;
-                layers = <0>;
+                layers = <NUM>;
             };
 
             combo_tab {
                 timeout-ms = <30>;
-                key-positions = <12 13>;
+                key-positions = <11 12>;
                 bindings = <&kp TAB>;
-                layers = <0>;
+                layers = <BASE>;
             };
 
             combo_ret {
                 timeout-ms = <30>;
-                key-positions = <17 18>;
+                key-positions = <15 25>;
                 bindings = <&kp RET>;
-                layers = <0 1 2 3 4 5>;
+                layers = <BASE>;
             };
             combo_caps_word {
                 timeout-ms = <50>;
-                key-positions = <4 14>;
+                key-positions = <4 13>;
                 bindings = <&caps_word>;
                 layers = <0>;
+            };
+            combo_lbkt {
+                timeout-ms = <30>;
+                key-positions = <1 2>;
+                bindings = <&kp LBKT>;
+                layers = <NUM>;
+            };
+            combo_f12 {
+                timeout-ms = <30>;
+                key-positions = <20 21>;
+                bindings = <&kp F12>;
+                layers = <FUN>;
             };
 
             // layer combos
             combo_fun {
                 timeout-ms = <50>;
-                key-positions = <32 33>;
-                bindings = <&mo _FUN>;
+                key-positions = <29 32>;
+                bindings = <&mo FUN>;
                 layers = <0>;
             };
         };
@@ -90,6 +102,7 @@
                 flavor = "tap-preferred";
                 bindings = <&kp>, <&sk>;
             };
+
         };
 
         keymap {
@@ -100,7 +113,7 @@
                         &kp W       &kp F       &kp P       &kp G       /**/ /**/       &kp J       &kp L       &kp U       &kp Y
             &kp A       &kp R       &kp S       &kp T       &kp D 	    /**/ /**/	    &kp H       &kp N       &kp E       &kp I       &kp O
             &kp Z       &kp X       &kp C       &kp V       &kp B       /**/ /**/       &kp K       &kp M       &kp COMMA   &kp DOT     &kp SLASH
-                                                &mo _NAV    &kp BSPC                    &kp SPC     &mo _NUM
+                                                &mo NAV     &kp BSPC                    &kp SPC     &mo NUM
         >;
         };
 
@@ -124,8 +137,8 @@
             fun {
         bindings = <
                         &kp F7      &kp F8      &kp F9      &kp PSCRN   /**/ /**/	    &none       &none       &none       &none
-            &kp F11     &kp F4      &kp F5      &kp F6      &kp SLCK    /**/ /**/       &none       SK(RSHFT)   SK(RCTRL)   SK(RALT)    SK(RGUI)
-            &kp F10     &kp F1      &kp F2      &kp F3      PB          /**/ /**/       &none       &none       &none       &none       &none
+            &kp F10     &kp F4      &kp F5      &kp F6      &kp SLCK    /**/ /**/       &none       SK(RSHFT)   SK(RCTRL)   SK(RALT)    SK(RGUI)
+            &kp F11     &kp F1      &kp F2      &kp F3      PB          /**/ /**/       &none       &none       &none       &none       &none
                                                 &none       &none                       &none       &none
         >;
         };
