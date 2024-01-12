@@ -57,22 +57,25 @@
 
             combo_ret {
                 timeout-ms = <30>;
-                key-positions = <15 25>;
+                key-positions = <14 23>;
                 bindings = <&kp RET>;
                 layers = <BASE>;
             };
+
             combo_caps_word {
                 timeout-ms = <50>;
-                key-positions = <4 13>;
+                key-positions = <3 12>;
                 bindings = <&caps_word>;
-                layers = <0>;
+                layers = <BASE>;
             };
+
             combo_lbkt {
                 timeout-ms = <30>;
                 key-positions = <0 1>;
                 bindings = <&kp LBKT>;
                 layers = <NUM>;
             };
+
             combo_f12 {
                 timeout-ms = <30>;
                 key-positions = <19 20>;
@@ -85,7 +88,7 @@
                 timeout-ms = <50>;
                 key-positions = <28 31>;
                 bindings = <&mo FUN>;
-                layers = <0>;
+                layers = <BASE>;
             };
         };
 
