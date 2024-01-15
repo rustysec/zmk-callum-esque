@@ -48,9 +48,23 @@
                 layers = <BASE>;
             };
 
+            combo_q_top {
+                timeout-ms = <30>;
+                key-positions = <0 1>;
+                bindings = <&kp Q>;
+                layers = <BASE>;
+            };
+
             combo_sqt {
                 timeout-ms = <30>;
                 key-positions = <25 26>;
+                bindings = <&kp SQT>;
+                layers = <BASE>;
+            };
+
+            combo_sqt_top {
+                timeout-ms = <30>;
+                key-positions = <6 7>;
                 bindings = <&kp SQT>;
                 layers = <BASE>;
             };
@@ -128,7 +142,7 @@
             default_layer {
         bindings = <
                         &kp W       &kp F       &kp P       &kp G       /**/ /**/       &kp J       &kp L       &kp U       &kp Y
-            &kp A       &kp R       &kp S       &kp T       &kp D 	    /**/ /**/	    &kp H       &kp N       &kp E       &kp I       &kp O
+            &kp A       &kp R       &kp S       &kp T       &kp D       /**/ /**/       &kp H       &kp N       &kp E       &kp I       &kp O
             &kp Z       &kp X       &kp C       &kp V       &kp B       /**/ /**/       &kp K       &kp M       &kp COMMA   &kp DOT     &kp SLASH
                                                 &mo NAV     &kp BSPC                    &kp SPC     &mo NUM
         >;
@@ -144,7 +158,7 @@
         };
             num {
         bindings = <
-                        &kp N7      &kp N8      &kp N9      &kp RBKT    /**/ /**/  	    &kp LBRC    &kp LPAR    &kp RPAR    &kp RBRC
+                        &kp N7      &kp N8      &kp N9      &kp RBKT    /**/ /**/       &kp LBRC    &kp LPAR    &kp RPAR    &kp RBRC
             &kp SEMI    &kp N4      &kp N5      &kp N6      &kp EQUAL   /**/ /**/       &none       SK(RSHFT)   SK(RCTRL)   SK(RALT)    SK(RGUI)
             &kp GRAVE   &kp N1      &kp N2      &kp N3      &kp BSLH    /**/ /**/       &none       &none       &none       &kp DOT     &trans
                                                 &kp N0      &kp MINUS                   &none       &none
@@ -153,7 +167,7 @@
 
             fun {
         bindings = <
-                        &kp F7      &kp F8      &kp F9      &kp PSCRN   /**/ /**/	    &none       &none       &none       &none
+                        &kp F7      &kp F8      &kp F9      &kp PSCRN   /**/ /**/       &none       &none       &none       &none
             &kp F10     &kp F4      &kp F5      &kp F6      &kp SLCK    /**/ /**/       &none       SK(RSHFT)   SK(RCTRL)   SK(RALT)    SK(RGUI)
             &kp F11     &kp F1      &kp F2      &kp F3      PB          /**/ /**/       &none       &none       &none       &none       &none
                                                 &none       &none                       &none       &none
