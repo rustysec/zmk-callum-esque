@@ -31,3 +31,5 @@ include:
     shield: gnat_right
   - board: nice_nano_v2
     shield: osprette
+  - board: nice_nano_v2
+    shield: settings_reset
