@@ -99,7 +99,7 @@
 
             // letter/symbols
             combo_k {
-                timeout-ms = <30>;
+                timeout-ms = <40>;
                 key-positions = <23 24>;
                 bindings = <&kp K>;
                 layers = <BASE>;
@@ -148,7 +148,7 @@
 
             // B position combos
             combo_b {
-                timeout-ms = <30>;
+                timeout-ms = <40>;
                 key-positions = <21 22>;
                 bindings = <&kp B>;
                 layers = <BASE>;
