@@ -99,7 +99,7 @@
 
             // letter/symbols
             combo_k {
-                timeout-ms = <40>;
+                timeout-ms = <50>;
                 key-positions = <23 24>;
                 bindings = <&kp K>;
                 layers = <BASE>;
