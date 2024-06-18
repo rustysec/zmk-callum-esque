@@ -197,7 +197,7 @@
                 nav {
                 bindings = <
                     &kp DEL     &none       &none       &none       &none       /**/ /**/       &kp C_PP    VOL_D       VOL_U       &kp C_PREV  &trans
-                    SK(LGUI)    SK(LALT)    SK(LCTRL)   SK(LSHFT)   &none       /**/ /**/       &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
+                    &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHFT   &none       /**/ /**/       &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
                                 &none       &none       &none                   /**/ /**/       /**/        &kp HOME    &kp END     &none
                                                         &none       &none                       &kp RET     &none
                 >;
@@ -206,7 +206,7 @@
                 num {
                 bindings = <
                     &kp LBKT    &kp N7      &kp N8      &kp N9      &kp RBKT    /**/ /**/  	    &kp LBRC    &kp LPAR    &kp RPAR    &kp RBRC    &trans
-                    &kp SEMI    &kp N4      &kp N5      &kp N6      &kp EQUAL   /**/ /**/       &none       SK(RSHFT)   SK(RCTRL)   SK(RALT)    SK(RGUI)
+                    &kp SEMI    &kp N4      &kp N5      &kp N6      &kp EQUAL   /**/ /**/       &none       &kp RSHFT   &kp RCTRL   &kp RALT    &kp RGUI
                     /*`*/       &kp N1      &kp N2      &kp N3      /*BSLH*/    /**/ /**/                   &none       &none       &kp DOT
                                                         &kp N0      &kp MINUS                   &none       &none
                 >;
@@ -215,7 +215,7 @@
                 fun {
                 bindings = <
                     &kp F12     &kp F7      &kp F8      &kp F9      &kp PSCRN   /**/ /**/	    &none       &none       &none       &none       &bootloader 
-                    &kp F11     &kp F4      &kp F5      &kp F6      &kp SLCK    /**/ /**/       &none       SK(RSHFT)   SK(RCTRL)   SK(RALT)    SK(RGUI)
+                    &kp F11     &kp F4      &kp F5      &kp F6      &kp SLCK    /**/ /**/       &none       &kp RSHFT   &kp RCTRL   &kp RALT    &kp RGUI
                     /*F10*/     &kp F1      &kp F2      &kp F3      /*PB*/      /**/ /**/       /*BTCLR*/   BT0         BT1         BT2         /*BT3*/
                                                         &none       &none                       &none       &none
                 >;
