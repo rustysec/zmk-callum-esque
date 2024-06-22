@@ -22,6 +22,7 @@
 #define BT2         &bt BT_SEL 2
 #define BT3         &bt BT_SEL 3
 
+/*
 #define SK(KEY)     &nk KEY KEY
 
 &kscan0 {
@@ -32,6 +33,7 @@
 &sk {
     quick-release;
 };
+*/
 
 &caps_word {
     continue-list = <UNDERSCORE MINUS BACKSPACE>;
@@ -80,7 +82,7 @@
                 timeout-ms = <30>;
                 key-positions = <16 23>;
                 bindings = <&kp RET>;
-                layers = <BASE NAV>;
+                layers = <BASE>;
             };
 
             combo_caps_word {
@@ -168,6 +170,7 @@
             };
         };
 
+        /*
         behaviors {
 
             // https://github.com/dxmh/zmk-config
@@ -182,6 +185,7 @@
                 bindings = <&kp>, <&sk>;
             };
         };
+        */
 
         keymap {
             compatible = "zmk,keymap";
