@@ -32,6 +32,10 @@
     quick-release;
 };
 
+&nk {
+    quick-release;
+};
+
 &caps_word {
     continue-list = <UNDERSCORE MINUS BACKSPACE>;
 };
@@ -179,6 +183,7 @@
                 tapping-term-ms = <100>;
                 flavor = "hold-preferred";
                 bindings = <&kp>, <&sk>;
+                require-prior-idle-ms = <100>;
             };
         };
 
