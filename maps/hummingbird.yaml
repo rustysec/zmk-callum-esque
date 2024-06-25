@@ -1,0 +1,93 @@
+# bootstrapped from https://github.com/jcmkk3/zmk-config/blob/main/config/hummingbird.keymap
+layout:
+  # qmk_keyboard: rufous
+  ortho_layout:
+    split: true
+    rows: 3
+    columns: 5
+    thumbs: 2
+    drop_pinky: true
+    drop_inner: true
+layers:
+  Base:
+  - [q, w, f, p, g, j, g, u, y, "'"]
+  - [a, r, s, t, d, h, n, e, i, o]
+  -    [x, c, v,       m, ',', .]
+  - NAV
+  - BKSPC
+  - SPC
+  - NUM
+  Nav:
+  - ['DEL', '', '', '', '', 'Play', 'VOL-', 'VOL+', 'Next', "'"]
+  - ['RGUI', 'LALT', 'LCTRL', 'LSHFT', '', 'LEFT', 'UP', 'DOWN', 'RIGHT', '']
+  - ['', '', '', 'HOME', 'END', '']
+  - [{type: held}, '', '', '']
+  Num:
+  - ['[', '7', '8', '9', ']', '', '', '', '', '']
+  - [';', '4', '5', '6', '=', '', 'RSHFT', 'RCTRL', 'RALT', 'RGUI']
+  - ['1', '2', '3', '', '', '.']
+  - ['0', '-', '', {type: held}]
+  Fn:
+  - ['f12', 'f7', 'f8', 'f9', 'PSCRN', '', '', '', '', '']
+  - ['f11', 'f4', 'f5', 'f6', 'SLCK', '', RCTRL, RSHFT, RALT, RGUI]
+  - ['f1', 'f2', 'f3', 'BT0', 'BT1', 'BT2']
+  - ['', '', {type: held}, {type: held}]
+combos:
+  - p: [20, 21]
+    k: z
+    l: [Base]
+  - p: [21, 22]
+    k: b
+    l: [Base]
+  - p: [23, 24]
+    k: k
+    l: [Base]
+  - p: [24, 25]
+    k: '/'
+    l: [Base]
+  - p: [16, 23]
+    k: 'Ret'
+    l: [Base]
+  - p: [13, 22]
+    k: 'Tab'
+    l: [Base]
+    
+  - p: [4, 14]
+    k: 'Caps Word'
+    l: [Num]
+  - p: [17, 18]
+    k: 'Ret'
+    l: [Nav, Num, Fn]
+    a: 'bottom'
+  - p: [12, 13]
+    k: 'Tab'
+    l: [Nav, Num]
+  - p: [11, 12]
+    k: 'Esc'
+    l: [Nav, Num]
+    
+  - p: [20, 21]
+    k: '`'
+    l: [Num]
+  - p: [21, 22]
+    k: '\'
+    l: [Num]
+    
+  - p: [20, 21]
+    k: 'f10'
+    l: [Fn]
+  - p: [21, 22]
+    k: 'PB'
+    l: [Fn]
+  - p: [20, 21]
+    k: 'f10'
+    l: [Fn]
+  - p: [23, 24]
+    k: 'BTCLR'
+    l: [Fn]
+    a: 'bottom'
+  - p: [24, 25]
+    k: 'BT4'
+    l: [Fn]
+    a: 'bottom'
+
