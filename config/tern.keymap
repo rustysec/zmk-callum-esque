@@ -28,10 +28,6 @@
     debounce-period  = <12>;
 };
 
-&sk {
-    quick-release;
-};
-
 &caps_word {
     continue-list = <UNDERSCORE MINUS BACKSPACE>;
 };
@@ -75,12 +71,14 @@
                 layers = <NAV NUM FUN>;
             };
 
+            /*
             combo_ret_base {
                 timeout-ms = <30>;
                 key-positions = <16 23>;
                 bindings = <&kp RET>;
                 layers = <BASE>;
             };
+            */
 
             combo_caps_word {
                 timeout-ms = <30>;
@@ -167,21 +165,7 @@
             };
         };
 
-        behaviors {
-
-            // https://github.com/dxmh/zmk-config
-            // Sticky key on tap, normal key on hold
-            // Useful for modifier-clicking without the modifier remaining active
-            nk: not_so_sticky_key {
-                compatible = "zmk,behavior-hold-tap";
-                label = "NOT_SO_STICKY_KEY";
-                #binding-cells = <2>;
-                tapping-term-ms = <100>;
-                flavor = "hold-preferred";
-                bindings = <&kp>, <&sk>;
-                require-prior-idle-ms = <100>;
-            };
-        };
+        behaviors { };
 
         keymap {
             compatible = "zmk,keymap";
@@ -197,17 +181,17 @@
 
                 nav {
                 bindings = <
-                    SK(LGUI)    &none       &none       &none       &none       /**/ /**/       &kp C_PP    VOL_D       VOL_U       &kp C_PREV  &kp DEL
-                    &none       SK(LALT)    SK(LCTRL)   SK(LSHFT)   &none       /**/ /**/       &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   BT3
+                    &kp LGUI    &none       &none       &none       &none       /**/ /**/       &kp C_PP    VOL_D       VOL_U       &kp C_PREV  &kp DEL
+                    &none       &kp LALT    &kp LCTRL   &kp LSHFT   &none       /**/ /**/       &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   BT3
                                 &none       &none       &none                   /**/ /**/       /*BTCLR*/   BT0         BT1         BT2
-                                                        &none       &none                       &none       &none
+                                                        &none       &none                       &kp RET     &none
                 >;
                 };
 
                 num {
                 bindings = <
-                    &kp SEMI    &kp N7      &kp N8      &kp N9      &kp RBKT    /**/ /**/       &kp LBRC    &kp LPAR    &kp RPAR    &kp RBRC    SK(RGUI)
-                    &kp GRAVE   &kp N4      &kp N5      &kp N6      &kp EQUAL   /**/ /**/       &none       SK(RSHFT)   SK(RCTRL)   SK(RALT)    &kp SLASH
+                    &kp SEMI    &kp N7      &kp N8      &kp N9      &kp RBKT    /**/ /**/       &kp LBRC    &kp LPAR    &kp RPAR    &kp RBRC    &kp RGUI
+                    &kp GRAVE   &kp N4      &kp N5      &kp N6      &kp EQUAL   /**/ /**/       &none       &kp RSHFT   &kp RCTRL   &kp RALT    &kp SLASH
                                 &kp N1      &kp N2      &kp N3      /*BSLH*/    /**/ /**/                   &kp HOME    &kp END     &kp DOT
                                                         &kp N0      &kp MINUS                   &none       &none
                 >;
@@ -215,8 +199,8 @@
 
                 fun {
                 bindings = <
-                    &kp F10     &kp F7      &kp F8      &kp F9      &kp PSCRN   /**/ /**/       &none       &none       &none       &none       SK(RGUI)
-                    &kp F11     &kp F4      &kp F5      &kp F6      &kp SLCK    /**/ /**/       &none       SK(RSHFT)   SK(RCTRL)   SK(RALT)    &none
+                    &kp F10     &kp F7      &kp F8      &kp F9      &kp PSCRN   /**/ /**/       &none       &none       &none       &none       &kp RGUI
+                    &kp F11     &kp F4      &kp F5      &kp F6      &kp SLCK    /**/ /**/       &none       &kp RSHFT   &kp RCTRL   &kp RALT    &none
                                 &kp F1      &kp F2      &kp F3      /*PB*/      /**/ /**/                   &none       &none       &none
                                                         &none       &none                       &none       &none
                 >;
