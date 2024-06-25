@@ -22,9 +22,6 @@
 #define BT2         &bt BT_SEL 2
 #define BT3         &bt BT_SEL 3
 
-#define NAV_SHIFT   &lt NAV LSHFT
-#define NUM_SHIFT   &lt NUM RSHFT
-
 /*
 #define SK(KEY)     &nk KEY KEY
 
@@ -198,7 +195,7 @@
                     &kp Q       &kp W       &kp F       &kp P       &kp G       /**/ /**/       &kp J       &kp L       &kp U       &kp Y       &kp SQT
                     &kp A       &kp R       &kp S       &kp T       &kp D 	    /**/ /**/	    &kp H       &kp N       &kp E       &kp I       &kp O
                     /*z*/       &kp X       &kp C       &kp V       /*b*/       /**/ /**/       /*k*/       &kp M       &kp COMMA   &kp DOT     /*SLASH*/
-                                                        NAV_SHIFT   &kp BSPC                    &kp SPC     NUM_SHIFT
+                                                        &mo NAV     &kp BSPC                    &kp SPC     &mo NUM
                 >;
                 };
 

@@ -112,8 +112,8 @@
                 layers = <NAV>;
             };
 
-            // z position
-            combo_z {
+            // q position
+            combo_q {
                 timeout-ms = <30>;
                 key-positions = <20 21>;
                 bindings = <&kp Q>;
