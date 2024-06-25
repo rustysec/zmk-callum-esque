@@ -92,10 +92,10 @@
                 layers = <BASE>;
             };
 
-            combo_top_lbrk {
+            combo_top_lbkt {
                 timeout-ms = <30>;
                 key-positions = <3 13>;
-                bindings = <&kp LBRK>;
+                bindings = <&kp LBKT>;
                 layers = <BASE>;
             };
 
@@ -113,10 +113,10 @@
                 layers = <BASE>;
             };
 
-            combo_top_rbrk {
+            combo_top_rbkt {
                 timeout-ms = <30>;
                 key-positions = <9 19>;
-                bindings = <&kp RBRK>;
+                bindings = <&kp RBKT>;
                 layers = <BASE>;
             };
 
