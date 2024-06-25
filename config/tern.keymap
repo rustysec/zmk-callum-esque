@@ -71,20 +71,67 @@
                 layers = <NAV NUM FUN>;
             };
 
-            /*
             combo_ret_base {
                 timeout-ms = <30>;
                 key-positions = <16 23>;
                 bindings = <&kp RET>;
                 layers = <BASE>;
             };
-            */
+
+            combo_top_lparen {
+                timeout-ms = <30>;
+                key-positions = <1 11>;
+                bindings = <&kp LPAREN>;
+                layers = <BASE>;
+            };
+
+            combo_top_lbrc {
+                timeout-ms = <30>;
+                key-positions = <2 12>;
+                bindings = <&kp LBRC>;
+                layers = <BASE>;
+            };
+
+            combo_top_lbrk {
+                timeout-ms = <30>;
+                key-positions = <3 13>;
+                bindings = <&kp LBRK>;
+                layers = <BASE>;
+            };
+
+            combo_top_rparen {
+                timeout-ms = <30>;
+                key-positions = <7 17>;
+                bindings = <&kp RPAREN>;
+                layers = <BASE>;
+            };
+
+            combo_top_rbrc {
+                timeout-ms = <30>;
+                key-positions = <8 18>;
+                bindings = <&kp RBRC>;
+                layers = <BASE>;
+            };
+
+            combo_top_rbrk {
+                timeout-ms = <30>;
+                key-positions = <9 19>;
+                bindings = <&kp RBRK>;
+                layers = <BASE>;
+            };
 
             combo_caps_word {
                 timeout-ms = <30>;
                 key-positions = <4 14>;
                 bindings = <&caps_word>;
                 layers = <NUM>;
+            };
+
+            combo_plus {
+                timeout-ms = <30>;
+                key-positions = <4 14>;
+                bindings = <&kp PLUS>;
+                layers = <BASE>;
             };
 
             // layer combos
