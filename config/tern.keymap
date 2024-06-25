@@ -81,7 +81,7 @@
             combo_top_lparen {
                 timeout-ms = <30>;
                 key-positions = <1 11>;
-                bindings = <&kp LPAREN>;
+                bindings = <&kp LPAR>;
                 layers = <BASE>;
             };
 
@@ -102,7 +102,7 @@
             combo_top_rparen {
                 timeout-ms = <30>;
                 key-positions = <7 17>;
-                bindings = <&kp RPAREN>;
+                bindings = <&kp RPAR>;
                 layers = <BASE>;
             };
 
