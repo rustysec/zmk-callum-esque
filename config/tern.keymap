@@ -162,7 +162,7 @@
                 timeout-ms = <30>;
                 key-positions = <23 24>;
                 bindings = <&bt BT_CLR>;
-                layers = <NAV>;
+                layers = <FUN>;
             };
 
             // q position
@@ -202,7 +202,7 @@
                 timeout-ms = <30>;
                 key-positions = <24 25>;
                 bindings = <&bt BT_SEL 3>;
-                layers = <NAV>;
+                layers = <FUN>;
             };
 
             // B position combos
@@ -244,7 +244,7 @@
                 bindings = <
                     &kp LGUI    &none       &none       &none       &none       /**/ /**/       &kp C_PP    VOL_D       VOL_U       &kp C_PREV  &kp DEL
                     &none       &kp LALT    &kp LCTRL   &kp LSHFT   &none       /**/ /**/       &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   BT3
-                                &none       &none       &none                   /**/ /**/       /*BTCLR*/   BT0         BT1         BT2
+                                &none       &none       &none                   /**/ /**/                   &kp HOME    &kp END     &kp DOT
                                                         &none       &none                       &kp RET     &none
                 >;
                 };
@@ -253,7 +253,7 @@
                 bindings = <
                     &kp SEMI    &kp N7      &kp N8      &kp N9      &kp RBKT    /**/ /**/       &kp LBRC    &kp LPAR    &kp RPAR    &kp RBRC    &kp RGUI
                     &kp GRAVE   &kp N4      &kp N5      &kp N6      &kp EQUAL   /**/ /**/       &none       &kp RSHFT   &kp RCTRL   &kp RALT    &kp SLASH
-                                &kp N1      &kp N2      &kp N3      /*BSLH*/    /**/ /**/                   &kp HOME    &kp END     &kp DOT
+                                &kp N1      &kp N2      &kp N3      /*BSLH*/    /**/ /**/                   &none       &none       &kp DOT
                                                         &kp N0      &kp MINUS                   &none       &none
                 >;
                 };	
@@ -262,7 +262,7 @@
                 bindings = <
                     &kp F10     &kp F7      &kp F8      &kp F9      &kp PSCRN   /**/ /**/       &none       &none       &none       &none       &kp RGUI
                     &kp F11     &kp F4      &kp F5      &kp F6      &kp SLCK    /**/ /**/       &none       &kp RSHFT   &kp RCTRL   &kp RALT    &none
-                                &kp F1      &kp F2      &kp F3      /*PB*/      /**/ /**/                   &none       &none       &none
+                                &kp F1      &kp F2      &kp F3      /*PB*/      /**/ /**/       /*BT_CLR*/  BT0         BT1         BT2         /*BT3*/
                                                         &none       &none                       &none       &none
                 >;
                 };
