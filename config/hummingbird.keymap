@@ -22,19 +22,6 @@
 #define BT2         &bt BT_SEL 2
 #define BT3         &bt BT_SEL 3
 
-/*
-#define SK(KEY)     &nk KEY KEY
-
-&kscan0 {
-    debounce-press-ms  = <5>;
-    debounce-release-ms  = <8>;
-};
-
-&sk {
-    quick-release;
-};
-*/
-
 &caps_word {
     continue-list = <UNDERSCORE MINUS BACKSPACE>;
 };
@@ -75,13 +62,48 @@
                 timeout-ms = <30>;
                 key-positions = <17 18>;
                 bindings = <&kp RET>;
-                layers = <NAV NUM FUN>;
+                layers = <BASE NAV NUM FUN>;
             };
 
-            combo_ret_base {
+            combo_top_lparen {
                 timeout-ms = <30>;
-                key-positions = <16 23>;
-                bindings = <&kp RET>;
+                key-positions = <1 11>;
+                bindings = <&kp LPAR>;
+                layers = <BASE>;
+            };
+
+            combo_top_lbrc {
+                timeout-ms = <30>;
+                key-positions = <2 12>;
+                bindings = <&kp LBRC>;
+                layers = <BASE>;
+            };
+
+            combo_top_lbkt {
+                timeout-ms = <30>;
+                key-positions = <3 13>;
+                bindings = <&kp LBKT>;
+                layers = <BASE>;
+            };
+
+            combo_top_rbkt {
+                timeout-ms = <30>;
+                key-positions = <6 16>;
+                bindings = <&kp RBKT>;
+                layers = <BASE>;
+            };
+
+            combo_top_rbrc {
+                timeout-ms = <30>;
+                key-positions = <7 17>;
+                bindings = <&kp RBRC>;
+                layers = <BASE>;
+            };
+
+            combo_top_rparen {
+                timeout-ms = <30>;
+                key-positions = <8 18>;
+                bindings = <&kp RPAR>;
                 layers = <BASE>;
             };
 
@@ -90,6 +112,13 @@
                 key-positions = <4 14>;
                 bindings = <&caps_word>;
                 layers = <NUM>;
+            };
+
+            combo_plus {
+                timeout-ms = <30>;
+                key-positions = <4 14>;
+                bindings = <&kp PLUS>;
+                layers = <BASE>;
             };
 
             // layer combos

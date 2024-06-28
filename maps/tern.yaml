@@ -10,8 +10,8 @@ layout:
     drop_inner: true
 layers:
   Base:
-  - [q, w, f, p, g, j, g, u, y, "'"]
-  - [a, r, s, t, d, h, n, e, i, o]
+  - [a, w, f, p, g, j, g, u, y, o]
+  - [z, r, s, t, d, h, n, e, i, /]
   -    [x, c, v,       m, ',', .]
   - NAV
   - BKSPC
@@ -21,7 +21,7 @@ layers:
   - ['DEL', '', '', '', '', 'Play', 'VOL-', 'VOL+', 'Next', "'"]
   - ['RGUI', 'LALT', 'LCTRL', 'LSHFT', '', 'LEFT', 'UP', 'DOWN', 'RIGHT', '']
   - ['', '', '', 'HOME', 'END', '']
-  - [{type: held}, '', '', '']
+  - [{type: held}, '', 'Ret', '']
   Num:
   - ['[', '7', '8', '9', ']', '', '', '', '', '']
   - [';', '4', '5', '6', '=', '', 'RSHFT', 'RCTRL', 'RALT', 'RGUI']
@@ -34,7 +34,7 @@ layers:
   - ['', '', {type: held}, {type: held}]
 combos:
   - p: [20, 21]
-    k: z
+    k: q
     l: [Base]
   - p: [21, 22]
     k: b
@@ -43,10 +43,7 @@ combos:
     k: k
     l: [Base]
   - p: [24, 25]
-    k: '/'
-    l: [Base]
-  - p: [16, 23]
-    k: 'Ret'
+    k: "'"
     l: [Base]
   - p: [13, 22]
     k: 'Tab'
@@ -72,6 +69,15 @@ combos:
   - p: [4, 14]
     k: '+'
     l: [Base]
+  - p: [17, 18]
+    k: 'Ret'
+    l: [Base]
+  - p: [0, 10]
+    k: 'q'
+    l: [Base]
+  - p: [9, 19]
+    k: '"'
+    l: [Base]
     
   - p: [4, 14]
     k: 'Caps Word'
@@ -83,12 +89,11 @@ combos:
   - p: [12, 13]
     k: 'Tab'
     l: [Nav, Num]
+    a: 'top'
   - p: [11, 12]
     k: 'Esc'
     l: [Nav, Num]
-  - p: [9, 19]
-    k: '"'
-    l: [Base]
+    a: 'top'
     
   - p: [20, 21]
     k: '`'
