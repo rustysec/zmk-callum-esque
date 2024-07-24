@@ -22,6 +22,12 @@
 #define BT2         &bt BT_SEL 2
 #define BT3         &bt BT_SEL 3
 
+
+&kscan0 {
+    debounce-press-ms = <12>;
+    debounce-release-ms = <12>;
+};
+
 &caps_word {
     continue-list = <UNDERSCORE MINUS BACKSPACE>;
 };
