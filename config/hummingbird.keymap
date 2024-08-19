@@ -67,7 +67,7 @@
                 timeout-ms = <30>;
                 key-positions = <17 18>;
                 bindings = <&kp RET>;
-                layers = <BASE NAV NUM FUN>;
+                layers = <NAV NUM FUN>;
             };
 
             combo_top_lparen {
