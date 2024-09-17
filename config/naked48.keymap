@@ -55,57 +55,57 @@
                 timeout-ms = <30>;
                 key-positions = <14 15>;
                 bindings = <&kp ESC>;
-                layers = <_NAV _NUM>;
+                layers = <NAV NUM>;
             };
 
             combo_esc_base {
                 timeout-ms = <30>;
                 key-positions = <14 26>;
                 bindings = <&kp ESC>;
-                layers = <_BASE>;
+                layers = <BASE>;
             };
 
             combo_tab {
                 timeout-ms = <30>;
                 key-positions = <15 16>;
                 bindings = <&kp TAB>;
-                layers = <_NUM>;
+                layers = <NUM>;
             };
 
             combo_tab_base {
                 timeout-ms = <30>;
                 key-positions = <16 28>;
                 bindings = <&kp TAB>;
-                layers = <_BASE>;
+                layers = <BASE>;
             };
 
             combo_ret {
                 timeout-ms = <30>;
                 key-positions = <20 21>;
                 bindings = <&kp RET>;
-                layers = <_NAV _NUM>;
+                layers = <NAV NUM>;
             };
 
             combo_ret_base {
                 timeout-ms = <30>;
                 key-positions = <16 26>;
                 bindings = <&kp RET>;
-                layers = <_BASE>;
+                layers = <BASE>;
             };
 
             combo_caps_word {
                 timeout-ms = <50>;
                 key-positions = <5 17>;
                 bindings = <&caps_word>;
-                layers = <_NUM>;
+                layers = <NUM>;
             };
 
             // layer combos
             combo_fun {
                 timeout-ms = <50>;
                 key-positions = <39 44>;
-                bindings = <&mo _FUN>;
-                layers = <_BASE>;
+                bindings = <&mo FUN>;
+                layers = <BASE>;
             };
 
             // layer combos
@@ -113,7 +113,7 @@
                 timeout-ms = <50>;
                 key-positions = <25 26>;
                 bindings = <&kp HOME>;
-                layers = <_NAV _NUM>;
+                layers = <NAV NUM>;
             };
 
             // layer combos
@@ -121,7 +121,7 @@
                 timeout-ms = <50>;
                 key-positions = <26 27>;
                 bindings = <&kp END>;
-                layers = <_NAV _NUM>;
+                layers = <NAV NUM>;
             };
 
         };
