@@ -22,10 +22,9 @@
 #define BT2         &bt BT_SEL 2
 #define BT3         &bt BT_SEL 3
 
-#define SK(KEY)     &nk KEY KEY
-
 &kscan0 {
-    debounce-period  = <12>;
+    debounce-press-ms = <12>;
+    debounce-release-ms = <12>;
 };
 
 &mt {
@@ -37,10 +36,6 @@
     flavor = "balanced";
     tapping-term-ms = <185>;
     quick-tap-ms = <185>;
-};
-
-&sk {
-    quick-release;
 };
 
 &sl {
@@ -58,35 +53,35 @@
 
             combo_esc {
                 timeout-ms = <30>;
-                key-positions = <11 12>;
+                key-positions = <14 15>;
                 bindings = <&kp ESC>;
                 layers = <_NAV _NUM>;
             };
 
             combo_esc_base {
                 timeout-ms = <30>;
-                key-positions = <12 22>;
+                key-positions = <14 26>;
                 bindings = <&kp ESC>;
                 layers = <_BASE>;
             };
 
             combo_tab {
                 timeout-ms = <30>;
-                key-positions = <12 13>;
+                key-positions = <15 16>;
                 bindings = <&kp TAB>;
                 layers = <_NUM>;
             };
 
             combo_tab_base {
                 timeout-ms = <30>;
-                key-positions = <13 23>;
+                key-positions = <16 28>;
                 bindings = <&kp TAB>;
                 layers = <_BASE>;
             };
 
             combo_ret {
                 timeout-ms = <30>;
-                key-positions = <17 18>;
+                key-positions = <20 21>;
                 bindings = <&kp RET>;
                 layers = <_NAV _NUM>;
             };
@@ -100,7 +95,7 @@
 
             combo_caps_word {
                 timeout-ms = <50>;
-                key-positions = <4 14>;
+                key-positions = <5 17>;
                 bindings = <&caps_word>;
                 layers = <_NUM>;
             };
@@ -108,7 +103,7 @@
             // layer combos
             combo_fun {
                 timeout-ms = <50>;
-                key-positions = <33 34>;
+                key-positions = <39 44>;
                 bindings = <&mo _FUN>;
                 layers = <_BASE>;
             };
@@ -131,21 +126,6 @@
 
         };
 
-        behaviors {
-
-            // https://github.com/dxmh/zmk-config
-            // Sticky key on tap, normal key on hold
-            // Useful for modifier-clicking without the modifier remaining active
-            nk: not_so_sticky_key {
-                compatible = "zmk,behavior-hold-tap";
-                label = "NOT_SO_STICKY_KEY";
-                #binding-cells = <2>;
-                tapping_term_ms = <200>;
-                flavor = "tap-preferred";
-                bindings = <&kp>, <&sk>;
-            };
-        };
-
         keymap {
             compatible = "zmk,keymap";
 
@@ -160,9 +140,9 @@
 
             nav {
             bindings = <
-                &none   &none       &none       &none       &none       &none       /**/        /**/    &kp C_PP    VOL_D       VOL_U       &kp C_PREV  &trans      &none
-                &none   SK(LGUI)    SK(LALT)    SK(LCTRL)   SK(LSHFT)   &none       /**/        /**/    &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp DEL     &none
-                &none   &none       &none       &none       &none       &none       /**/        /**/    &bt BT_CLR  BT0         BT1         BT2         BT3         &none
+                &none   &kp DEL     &none       &none       &none       &none       /**/        /**/    &kp C_PP    VOL_D       VOL_U       &kp C_PREV  &trans      &none
+                &none   &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHFT   &none       /**/        /**/    &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp DEL     &none
+                &none   &none       &none       &none       &none       &none       /**/        /**/    &none       &kp HOME    &kp END     &none       &none       &none
                         &none       &none       &none       &none       &none       &none       &none   &none       &none       &none       &none       &none
             >;
             };
@@ -170,7 +150,7 @@
             num {
             bindings = <
                 &none   &kp LBKT    &kp N7      &kp N8      &kp N9      &kp RBKT    /**/        /**/  	&kp LBRC    &kp LPAR    &kp RPAR    &kp RBRC    &trans      &none
-                &none   &kp SEMI    &kp N4      &kp N5      &kp N6      &kp EQUAL   /**/        /**/    &none       SK(RSHFT)   SK(RCTRL)   SK(RALT)    SK(RGUI)    &none
+                &none   &kp SEMI    &kp N4      &kp N5      &kp N6      &kp EQUAL   /**/        /**/    &none       &kp RSHFT   &kp RCTRL   &kp RALT    &kp RGUI    &none
                 &none   &kp GRAVE   &kp N1      &kp N2      &kp N3      &kp BSLH    /**/        /**/    &none       &none       &none       &kp DOT     &none       &none
                         &none       &none       &none       &kp N0      &kp MINUS   &none       &none   &none       &none       &none       &none       &none
             >;
@@ -179,8 +159,8 @@
             fun {
             bindings = <
                 &none   &kp F12     &kp F7      &kp F8      &kp F9      &kp PSCRN   /**/        /**/    &none       &none       &none       &none       &bootloader &none
-                &none   &kp F11     &kp F4      &kp F5      &kp F6      &kp SLCK    /**/        /**/    &none       SK(RSHFT)   SK(RCTRL)   SK(RALT)    SK(RGUI)    &none
-                &none   &kp F10     &kp F1      &kp F2      &kp F3      PB          /**/        /**/    &none       &none       &none       &none       &none       &none
+                &none   &kp F11     &kp F4      &kp F5      &kp F6      &kp SLCK    /**/        /**/    &none       &kp RSHFT   &kp RCTRL   &kp RALT    &kp RGUI    &none
+                &none   &kp F10     &kp F1      &kp F2      &kp F3      PB          /**/        /**/    &bt BT_CLR  BT0         BT1         BT2         BT3         &none
                         &none       &none       &none       &none       &none       &none       &none   &none       &none       &none       &none       &none
             >;
             };
