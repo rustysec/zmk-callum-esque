@@ -141,7 +141,7 @@
             nav {
             bindings = <
                 &none   &kp DEL     &none       &none       &none       &none       /**/        /**/    &kp C_PP    VOL_D       VOL_U       &kp C_PREV  &trans      &none
-                &none   &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHFT   &none       /**/        /**/    &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp DEL     &none
+                &none   &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHFT   &none       /**/        /**/    &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &none       &none
                 &none   &none       &none       &none       &none       &none       /**/        /**/    &none       &kp HOME    &kp END     &none       &none       &none
                         &none       &none       &none       &none       &none       &none       &none   &kp RET     &none       &none       &none       &none
             >;
