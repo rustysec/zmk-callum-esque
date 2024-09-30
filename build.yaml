@@ -27,7 +27,7 @@ include:
     shield: naked48
   - board: nice_nano_v2
     shield: chocv 
-  - board: nrfmicro_13
+  - board: nrfmicro_11
     shield: chocv 
   - board: nice_nano_v2
     shield: cradio_left
