@@ -26,12 +26,8 @@
 #define SK(KEY)     &nk KEY KEY
 
 &kscan0 {
-    debounce-press-ms = <10>;
-    debounce-release-ms = <10>;
-};
-
-&sk {
-    quick-release;
+    debounce-press-ms = <15>;
+    debounce-release-ms = <15>;
 };
 
 &caps_word {
@@ -159,21 +155,6 @@
             };
         };
 
-        behaviors {
-
-            // https://github.com/dxmh/zmk-config
-            // Sticky key on tap, normal key on hold
-            // Useful for modifier-clicking without the modifier remaining active
-            nk: not_so_sticky_key {
-                compatible = "zmk,behavior-hold-tap";
-                label = "NOT_SO_STICKY_KEY";
-                #binding-cells = <2>;
-                tapping_term_ms = <200>;
-                flavor = "hold-preferred";
-                bindings = <&kp>, <&sk>;
-            };
-        };
-
         keymap {
             compatible = "zmk,keymap";
 
@@ -189,7 +170,7 @@
             nav {
             bindings = <
                 &kp DEL     &none       &none       &none       &none       /**/ /**/       &kp C_PP    VOL_D       VOL_U       &none       &trans
-                SK(LGUI)    SK(LALT)    SK(LCTRL)   SK(LSHFT)   &none       /**/ /**/       &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &none
+                &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHFT   &none       /**/ /**/       &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &none
                 &none       &none       &none       &none       &none       /**/ /**/       &none       &kp HOME    &kp END     &none       &none
                                         &none       &none       &none                       &kp RET     &none       &none
             >;
@@ -198,7 +179,7 @@
             num {
             bindings = <
                 &kp LBKT    &kp N7      &kp N8      &kp N9      &kp RBKT    /**/ /**/  	    &kp LBRC    &kp LPAR    &kp RPAR    &kp RBRC    &trans
-                &kp SEMI    &kp N4      &kp N5      &kp N6      &kp EQUAL   /**/ /**/       &none       SK(RSHFT)   SK(RCTRL)   SK(RALT)    SK(RGUI)
+                &kp SEMI    &kp N4      &kp N5      &kp N6      &kp EQUAL   /**/ /**/       &none       &kp RSHFT   &kp RCTRL   &kp RALT    &kp RGUI
                 &kp GRAVE   &kp N1      &kp N2      &kp N3      &kp BSLH    /**/ /**/       &none       &none       &none       &kp DOT     &none
                                         &none       &kp N0      &kp MINUS                   &none       &none       &none
             >;
@@ -207,7 +188,7 @@
             fun {
             bindings = <
                 &kp F12     &kp F7      &kp F8      &kp F9      &kp PSCRN   /**/ /**/	    &none       &none       &none       &none       &bootloader 
-                &kp F11     &kp F4      &kp F5      &kp F6      &kp SLCK    /**/ /**/       &none       SK(RSHFT)   SK(RCTRL)   SK(RALT)    SK(RGUI)
+                &kp F11     &kp F4      &kp F5      &kp F6      &kp SLCK    /**/ /**/       &none       &kp RSHFT   &kp RCTRL   &kp RALT    &kp RGUI
                 &kp F10     &kp F1      &kp F2      &kp F3      PB          /**/ /**/       BTCLR       BT0         BT1         BT2         BT3
                                         &none       &none       &none                       &none       &none       &none
             >;
