@@ -66,13 +66,6 @@
                 layers = <BASE>;
             };
 
-            combo_ret {
-                timeout-ms = <30>;
-                key-positions = <17 18>;
-                bindings = <&kp RET>;
-                layers = <BASE NAV NUM FUN>;
-            };
-
             combo_ret_base {
                 timeout-ms = <30>;
                 key-positions = <16 26>;
