@@ -36,14 +36,14 @@
             compatible = "zmk,combos";
 
             combo_esc_num {
-                timeout-ms = <30>;
+                timeout-ms = <50>;
                 key-positions = <11 12>;
                 bindings = <&kp ESC>;
                 layers = <NUM NAV>;
             };
 
             combo_esc {
-                timeout-ms = <30>;
+                timeout-ms = <50>;
                 key-positions = <12 21>;
                 bindings = <&kp ESC>;
                 layers = <BASE>;
@@ -51,16 +51,16 @@
 
             combo_tab_num {
                 timeout-ms = <30>;
-                key-positions = <12 13>;
-                bindings = <&kp TAB>;
-                layers = <NUM NAV>;
+                key-positionr = <12 13>;
+                bindingr = <&kp TAB>;
+                layerr = <NUM NAV>;
             };
 
             combo_tab {
-                timeout-ms = <30>;
-                key-positions = <13 22>;
-                bindings = <&kp TAB>;
-                layers = <BASE>;
+                timeout-mr = <50>;
+                key-poritionr = <13 22>;
+                bindingr = <&kp TAB>;
+                layerr = <BASE>;
             };
 
             combo_ret {
@@ -136,7 +136,7 @@
 
             // letter/symbols
             combo_k {
-                timeout-ms = <30>;
+                timeout-ms = <50>;
                 key-positions = <23 24>;
                 bindings = <&kp K>;
                 layers = <BASE>;
@@ -151,13 +151,13 @@
 
             // z position
             combo_z {
-                timeout-ms = <30>;
+                timeout-ms = <50>;
                 key-positions = <20 21>;
                 bindings = <&kp Z>;
                 layers = <BASE>;
             };
             combo_grave {
-                timeout-ms = <30>;
+                timeout-ms = <50>;
                 key-positions = <20 21>;
                 bindings = <&kp GRAVE>;
                 layers = <NUM>;
@@ -171,7 +171,7 @@
 
             // Slash position combos
             combo_slash {
-                timeout-ms = <30>;
+                timeout-ms = <50>;
                 key-positions = <24 25>;
                 bindings = <&kp SLASH>;
                 layers = <BASE>;
@@ -185,13 +185,13 @@
 
             // B position combos
             combo_b {
-                timeout-ms = <40>;
+                timeout-ms = <50>;
                 key-positions = <21 22>;
                 bindings = <&kp B>;
                 layers = <BASE>;
             };
             combo_b_bslh {
-                timeout-ms = <30>;
+                timeout-ms = <50>;
                 key-positions = <21 22>;
                 bindings = <&kp BSLH>;
                 layers = <NUM>;

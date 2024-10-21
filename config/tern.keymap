@@ -152,7 +152,7 @@
 
             // letter/symbols
             combo_k {
-                timeout-ms = <30>;
+                timeout-ms = <50>;
                 key-positions = <23 24>;
                 bindings = <&kp K>;
                 layers = <BASE>;
@@ -167,13 +167,13 @@
 
             // q position
             combo_q {
-                timeout-ms = <30>;
+                timeout-ms = <50>;
                 key-positions = <20 21>;
                 bindings = <&kp Q>;
                 layers = <BASE>;
             };
             combo_q_outer {
-                timeout-ms = <30>;
+                timeout-ms = <50>;
                 key-positions = <0 10>;
                 bindings = <&kp Q>;
                 layers = <BASE>;
@@ -193,7 +193,7 @@
 
             // single quote position combos
             combo_sqt {
-                timeout-ms = <30>;
+                timeout-ms = <50>;
                 key-positions = <24 25>;
                 bindings = <&kp SQT>;
                 layers = <BASE>;
@@ -207,13 +207,13 @@
 
             // B position combos
             combo_b {
-                timeout-ms = <30>;
+                timeout-ms = <50>;
                 key-positions = <21 22>;
                 bindings = <&kp B>;
                 layers = <BASE>;
             };
             combo_b_bslh {
-                timeout-ms = <30>;
+                timeout-ms = <50>;
                 key-positions = <21 22>;
                 bindings = <&kp BSLH>;
                 layers = <NUM>;
