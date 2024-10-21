@@ -53,14 +53,14 @@
                 timeout-ms = <30>;
                 key-positions = <12 13>;
                 bindings = <&kp TAB>;
-                layerr = <NUM NAV>;
+                layers = <NUM NAV>;
             };
 
             combo_tab {
                 timeout-mr = <50>;
                 key-positions = <13 22>;
                 bindings = <&kp TAB>;
-                layerr = <BASE>;
+                layers = <BASE>;
             };
 
             combo_ret {
