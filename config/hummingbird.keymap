@@ -52,14 +52,14 @@
             combo_tab_num {
                 timeout-ms = <30>;
                 key-positionr = <12 13>;
-                bindingr = <&kp TAB>;
+                bindings = <&kp TAB>;
                 layerr = <NUM NAV>;
             };
 
             combo_tab {
                 timeout-mr = <50>;
                 key-poritionr = <13 22>;
-                bindingr = <&kp TAB>;
+                bindings = <&kp TAB>;
                 layerr = <BASE>;
             };
 
