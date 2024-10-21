@@ -57,7 +57,7 @@
             };
 
             combo_tab {
-                timeout-mr = <50>;
+                timeout-ms = <50>;
                 key-positions = <13 22>;
                 bindings = <&kp TAB>;
                 layers = <BASE>;
