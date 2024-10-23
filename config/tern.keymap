@@ -58,7 +58,7 @@
             };
 
             combo_tab {
-                timeout-ms = <30>;
+                timeout-ms = <75>;
                 key-positions = <13 22>;
                 bindings = <&kp TAB>;
                 layers = <BASE>;
@@ -152,7 +152,7 @@
 
             // letter/symbols
             combo_k {
-                timeout-ms = <50>;
+                timeout-ms = <75>;
                 key-positions = <23 24>;
                 bindings = <&kp K>;
                 layers = <BASE>;
@@ -167,7 +167,7 @@
 
             // q position
             combo_q {
-                timeout-ms = <50>;
+                timeout-ms = <75>;
                 key-positions = <20 21>;
                 bindings = <&kp Q>;
                 layers = <BASE>;
@@ -207,13 +207,13 @@
 
             // B position combos
             combo_b {
-                timeout-ms = <50>;
+                timeout-ms = <75>;
                 key-positions = <21 22>;
                 bindings = <&kp B>;
                 layers = <BASE>;
             };
             combo_b_bslh {
-                timeout-ms = <50>;
+                timeout-ms = <75>;
                 key-positions = <21 22>;
                 bindings = <&kp BSLH>;
                 layers = <NUM>;
